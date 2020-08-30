@@ -3,7 +3,7 @@
         font-size: 42px;
     }
     .menu_area #nav .nav-link {
-        padding: 35px 7.5px;
+        padding: 35px 35px;
     }
     .sing-up-button > a {
         color: #00abb6;
@@ -24,7 +24,7 @@
         padding: 0 4%;
     }
     .header_area.sticky .menu_area #nav .nav-link {
-        padding: 23px 7.5px;
+        padding: 23px 35px;
     }
 }
 
@@ -40,7 +40,7 @@
     }
     .header_area .menu_area #nav .nav-link,
     .header_area.sticky .menu_area #nav .nav-link {
-        padding: 7.5px 15px;
+        padding: 7.5px 35px;
     }
     #ca-navbar {
         padding: 30px;
