@@ -1440,6 +1440,10 @@ p {
     padding: .25rem 1.5rem;
 }
 
-/*.dropdown-menu:hover {
-    max-height: 250px;
-}*/
+@media(min-width: 767px) {
+
+#website {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+}
