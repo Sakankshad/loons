@@ -1442,8 +1442,16 @@ p {
 
 @media(min-width: 767px) {
 
-#website {
+#website , #social{
     padding-top: 50px;
     padding-bottom: 30px;
 }
+}
+
+.single-special {
+    border: 5px dashed #e6e7e8;
+}
+
+.single-special:hover {
+    border: 5px dashed #636466;
 }
