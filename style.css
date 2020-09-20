@@ -472,7 +472,7 @@ p {
     z-index: 3;
 }
 
-.get-start-area .email {
+.get-start-area .number {
     background: #00abb6;
     height: 50px;
     max-width: 260px;
@@ -1389,7 +1389,7 @@ p {
 }
 
 .landing-view {
-    margin-top: 110px;
+    margin-top: 130px;
 }
 
 .navbar-nav li {
@@ -1455,3 +1455,148 @@ p {
 .single-special:hover {
     border: 5px dashed #636466;
 }
+
+.form-group input, .form-group .select-wrap select {
+    height: 50px !important;
+}
+
+/*placeholder alignment*/
+            input[type="email"]::placeholder {  
+                  
+                /* Firefox, Chrome, Opera */ 
+                text-align: left; 
+                color: #495057;
+            } 
+            input[type="text"]::placeholder {  
+                  
+                /* Firefox, Chrome, Opera */ 
+                text-align: left; 
+                color: #495057;
+            } 
+            input[type="number"]::placeholder {  
+                  
+                /* Firefox, Chrome, Opera */ 
+                text-align: left;  
+                color: #495057;
+            } 
+            input[type="email"]:-ms-input-placeholder { 
+                  
+                /* Internet Explorer 10-11 */ 
+                text-align: left;  
+                color: #495057;
+            }
+            input[type="text"]:-ms-input-placeholder { 
+                  
+                /* Internet Explorer 10-11 */ 
+                text-align: left; 
+                color: #495057; 
+            }
+            input[type="number"]:-ms-input-placeholder { 
+                  
+                /* Internet Explorer 10-11 */ 
+                text-align: left;  
+                color: #495057;
+            }
+            input[type="email"]::-ms-input-placeholder {  
+                  
+                /* Microsoft Edge */ 
+                text-align: left;  
+                color: #495057;
+            }
+            input[type="text"]::-ms-input-placeholder {  
+                  
+                /* Microsoft Edge */ 
+                text-align: left;  
+                color: #495057;
+            }
+            input[type="number"]::-ms-input-placeholder {  
+                  
+                /* Microsoft Edge */ 
+                text-align: left;  
+                color: #495057;
+            }
+            .get-start-area form input[type="number"]::-ms-input-placeholder {
+                text-align: center !important;
+                color: #ffffff;
+                opacity: 75%;
+            }
+            .get-start-area form input[type="number"]:-ms-input-placeholder {
+                text-align: center !important;
+                color: #ffffff;
+                opacity: 75%;
+            }
+            .get-start-area form input[type="number"]::placeholder {
+                text-align: center !important;
+                color: #ffffff;
+                opacity: 75%;
+            }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*header > div:hover {
+border-bottom: 5px dashed #636466 !important;
+}*/
+
+.rotating-dashed {
+  position: relative;
+  /*margin: 40px auto;*/
+  width: 100%;
+  height: 5px;
+  overflow: hidden;
+  color: #e6e7e8;
+  bottom: 0;
+}
+
+.rotating-dashed .dashing {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.rotating-dashed .dashing:nth-of-type(1) { -webkit-transform: rotate(   0deg ); }
+
+.rotating-dashed .dashing i {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200%;
+  border-bottom: 5px dashed;
+}
+
+.rotating-dashed strong {
+  display: block;
+  width: 105%;
+  line-height: 90px;
+  text-align: center;
+  position: absolute;
+  font-size: 50px;
+  -webkit-transform: rotate( 90deg );
+}
+
+header:hover .rotating-dashed {
+  color: #636466;
+  cursor: pointer; 
+}
+
+header:hover .rotating-dashed .dashing i {
+  -webkit-animation: slideDash 20s infinite linear;
+}
+
+@-webkit-keyframes slideDash {
+  from { -webkit-transform: translateX( -50% ); }
+  to   { -webkit-transform: translateX(   0% ); }
+}
+
+
