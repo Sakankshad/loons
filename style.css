@@ -507,7 +507,7 @@ p {
     text-align: center;
 }
 
-.get-start-area .email:focus {
+.get-start-area .number:focus {
     border: none;
     outline-offset: transparent !important;
     border-radius: 30px;
@@ -1367,9 +1367,14 @@ p {
         text-align: center !important;
     }
 
-    .submit {
+    .submit , .number {
         margin: 0 auto !important;
     }
+
+    .number {
+        margin-bottom: 20px !important;
+    }
+
     .wellcome_area {
         padding-bottom: 50px;
     }
