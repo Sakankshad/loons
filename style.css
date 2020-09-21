@@ -1211,6 +1211,12 @@ p {
     border-radius: 25px 25px 25px 0;
 }
 
+#number {
+    font-size: 18px;
+    padding: 15px 15px;
+    border-radius: 25px 25px 25px 0;
+}
+
 #email {
     font-size: 18px;
     padding: 15px 15px;
@@ -1219,6 +1225,7 @@ p {
 
 #message {
     border-radius: 25px 25px 25px 0;
+    font-size: 18px;
 }
 
 .btn.submit-btn {
@@ -1231,8 +1238,16 @@ p {
 }
 
 .btn.submit-btn:hover {
-    background: #5b32b4;
+    background: #f8951d;
     color: #fff;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.btn.submit-btn:focus {
+    background: #ffffff;
+    color: #f8951d;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
@@ -1521,6 +1536,19 @@ p {
                 text-align: left;  
                 color: #495057;
             }
+            textarea::-ms-input-placeholder {
+                text-align: left !important; 
+                color: #495057 !important;
+            }
+            textarea:-ms-input-placeholder {
+                text-align: left !important; 
+                color: #495057 !important;
+            }
+            textarea::placeholder {
+                text-align: left !important; 
+                color: #495057 !important;
+            }
+
             .get-start-area form input[type="number"]::-ms-input-placeholder {
                 text-align: center !important;
                 color: #ffffff;

@@ -62,7 +62,7 @@
                                         <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
                                     </ul>
                                     <div class="sing-up-button d-lg-none">
-                                        <a href="#">Enquire Now</a>
+                                        <a href="#contact">Enquire Now</a>
                                     </div>
                                 </div>
                             </nav>
@@ -71,7 +71,7 @@
                     <!-- Signup btn -->
                     <div class="col-12 col-lg-2">
                         <div class="sing-up-button d-none d-lg-block">
-                            <a href="#">Enquire Now</a>
+                            <a href="#contact">Enquire Now</a>
                         </div>
                     </div>
                 </div>
@@ -111,8 +111,8 @@
                 </div>
                 <div class="get-start-area">
                             <!-- Form Start -->
-                            <form action="#" method="post" class="form-inline">
-                                <input type="number" class="form-control number" placeholder="+91  XXXXXXXXXX">
+                            <form action="#" method="post" class="form-inline enquiry">
+                                <input type="number" class="form-control number" name="Number" placeholder="+91  XXXXXXXXXX">
                                 <input type="submit" class="submit" value="Request a Callback">
                             </form>
                             <!-- Form End -->
@@ -786,26 +786,32 @@
                 <div class="col-md-6">
                     <!-- Form Start-->
                     <div class="contact_from">
-                        <form action="#" method="post">
+                        <form action="#" class="billing-form enquiry" id="enquiry-form">
                             <!-- Message Input Area Start -->
                             <div class="contact_input_area">
                                 <div class="row">
                                     <!-- Single Input Area Start -->
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                                            <input type="text" class="form-control" name="Name" id="name" placeholder="Your Name" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="Number" id="number" placeholder="Your Number" value="">
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail" required>
+                                            <input type="email" class="form-control" name="Email" id="email" placeholder="Your E-mail" value="">
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Your Message *" required></textarea>
+                                            <textarea name="Details" class="form-control" id="message" cols="30" rows="4" placeholder="Your Message" required></textarea>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
@@ -868,6 +874,7 @@
     <script src="js/footer-reveal.min.js"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
+    <script src="js/formData.js"></script>
 
 </body>
 
