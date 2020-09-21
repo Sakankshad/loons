@@ -711,6 +711,7 @@ p {
     z-index: 1;
     background-position: center center;
     background-size: cover;
+    background: #ffffff;
     border: 20px solid #fff;
     border-radius: 20px;
     height: auto;

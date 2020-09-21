@@ -99,7 +99,7 @@
         <div class="container">
         <div class="row justify-content-center" style="margin: 0 !important;">
           <div class="col-xl-8 ftco-animate">
-            <form action="#" class="billing-form" id="enquiry-form-customized-gifts">
+            <form class="billing-form" method=”post” name=”contact_form” action=”contact-form-handler.php” id="enquiry-form-customized-gifts">
                 <div class="row align-items-end">
                     <div class="col-md-12">
                         <div class="form-group">
@@ -363,6 +363,16 @@
             </div>
         </div>
     </section>
+
+    <form method="post" name="contact_form" action="contact-form-handler.php"> Your Name: <input type="text" name="name"> Email Address:
+
+    <input type="text" name="email"> Message:
+
+    <textarea name="message"></textarea>
+
+    <input type="submit" value="Submit">
+
+    </form>
     <!-- ***** Contact Us Area End ***** -->
 
     <!-- ***** Footer Area Start ***** -->
@@ -395,7 +405,9 @@
         </div>
     </footer>
     <!-- ***** Footer Area Start ***** -->
-
+    <script language=”JavaScript”>
+    var frmvalidator = new Validator(“contactform”); frmvalidator.addValidation(“name”,”req”,”Please provide your name”); frmvalidator.addValidation(“email”,”req”,”Please provide your email”); frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”);
+    </script>
     <!-- Jquery-2.2.4 JS -->
     <script src="js/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
