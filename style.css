@@ -44,6 +44,7 @@
     padding: 0;
 }
 
+
 body {
     font-family: 'Cabin', sans-serif;
     background-color: #fff;
@@ -764,12 +765,12 @@ p {
 .cool_facts_area {
     position: relative;
     z-index: auto;
-    background: #00abb6;
+    /*background: #00abb6;
     background: -webkit-linear-gradient(to left, #7873ed, #00abb6);
     background: -webkit-linear-gradient(right, #7873ed, #00abb6);
     background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#00abb6));
     background: -o-linear-gradient(right, #7873ed, #00abb6);
-    background: linear-gradient(to left, #7873ed, #00abb6);
+    background: linear-gradient(to left, #7873ed, #00abb6);*/
     padding: 180px 0 80px 0;
     top: -100px;
 }
@@ -799,7 +800,7 @@ p {
 
 .counter-area > h3 {
     color: #ffffff;
-    font-size: 60px;
+    font-size: 80px;
     margin-bottom: 0;
     line-height: 1;
 }
@@ -1446,7 +1447,7 @@ p {
 
 .dropdown:hover .dropdown-menu {
     display: block !important;
-    max-height: 250px;
+    max-height: 500px;
     opacity: 1;
     padding: .5rem 0;
 }
@@ -1634,3 +1635,21 @@ header:hover .rotating-dashed .dashing i {
 }
 
 
+.background-change {
+    animation: themifyAnimatedBG 15000ms infinite alternate;
+}
+
+@keyframes themifyAnimatedBG {
+0% {
+    background-color: #00abb6;
+}
+100% {
+    background-color: #fb397d;
+}
+50% {
+    background-color: #f8951d;
+}
+33.3% {
+    background-color: #5b32b4; 
+}
+}
