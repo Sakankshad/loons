@@ -1775,7 +1775,8 @@ header:hover .rotating-dashed .dashing i {
 #mySidenav2 .closebtn {
     margin: 0;
     right: auto !important;
-    padding-left: 10%; 
+    padding-left: 5%; 
+    font-size: 50px;
 }
 
 .sidenav a {
