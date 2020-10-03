@@ -86,15 +86,16 @@
                                 <a class="navbar-brand" href="#">
                                     <img src="img/loons-logo-without-background.png" height="60" >
                                 </a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> -->
+                                <button class="navbar-toggler"><span class="navbar-toggler-icon" onclick="openNav1()"></span></button>
                                 <!-- Menu Area -->
-                                <div class="collapse navbar-collapse" id="ca-navbar">
+                                <div class="collapse navbar-collapse" id="ca-navbar" >
                                     <ul class="navbar-nav ml-auto" id="nav">
                                         <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
                                         <li class="nav-item active"><a class="nav-link" href="#home">Know us</a></li>
                                         <li class="nav-item dropdown">
                                           <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align: center !important;">Services</a>
-                                          <div class="dropdown-menu" aria-labelledby="dropdown04" style="overflow: scroll;">
+                                          <div class="dropdown-menu" aria-labelledby="dropdown04">
                                             <a class="dropdown-item" href="products.html">Branding</a>
                                             <a class="dropdown-item" href="products.html">Social Media Management</a>
                                             <a class="dropdown-item" href="products.html">Logo Designing</a>
@@ -136,7 +137,58 @@
         <!-- <div style="background: rgba(255, 230, 48, 1); height: 3px; position: absolute; bottom: 0px; width: 100%;"></div> -->
     </header>
     <!-- ***** Header Area End ***** -->
+    <div id="mySidenav1" class="sidenav" style="z-index: 9999999999999999;">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+            <ul class="navbar-nav ml-auto" id="nav">
+                <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#home">Know us</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#home" onclick="openNav2()">Services &rarr;</a></li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align: center !important;">Services</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                        <a class="dropdown-item" href="products.html">Branding</a>
+                        <a class="dropdown-item" href="products.html">Social Media Management</a>
+                        <a class="dropdown-item" href="products.html">Logo Designing</a>
+                        <a class="dropdown-item" href="products.html">Graphic Designing</a>
+                        <a class="dropdown-item" href="products.html">Website Devlopment</a>
+                        <a class="dropdown-item" href="products.html">Search Engine Optimization</a>
+                        <a class="dropdown-item" href="products.html">Designs for Print</a>
+                        <a class="dropdown-item" href="products.html">Advertisement & Analytics</a>
+                        <a class="dropdown-item" href="products.html">Creative Consultancy</a>
+                        <a class="dropdown-item" href="products.html">Product Designing</a>
+                        <a class="dropdown-item" href="products.html">Content Creation</a>
+                        <a class="dropdown-item" href="products.html">Online Brand Presence</a>
+                        <a class="dropdown-item" href="products.html">Product Photography</a>
+                        <a class="dropdown-item" href="products.html">Photo & Video Ad Production</a>
+                        <a class="dropdown-item" href="products.html">Integrated Marketing Solution</a>
+                    </div>
+                </li> -->
+                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+            </ul>
+            <div class="mobile-enquiry-button" onclick="closeNav1()">
+                <a href="#contact" style="text-align: center;">Enquire Now</a>
+            </div>
 
+
+    </div>
+    <div id="mySidenav2" class="sidenav" style="z-index: 99999999999999999; background: #f8951d">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()" style="font-size: 40px !important;">&larr;</a>
+        <a class="dropdown-item" href="products.html">Branding</a>
+        <a class="dropdown-item" href="products.html">Social Media Management</a>
+        <a class="dropdown-item" href="products.html">Logo Designing</a>
+        <a class="dropdown-item" href="products.html">Graphic Designing</a>
+        <a class="dropdown-item" href="products.html">Website Devlopment</a>
+        <a class="dropdown-item" href="products.html">Search Engine Optimization</a>
+        <a class="dropdown-item" href="products.html">Designs for Print</a>
+        <a class="dropdown-item" href="products.html">Advertisement & Analytics</a>
+        <a class="dropdown-item" href="products.html">Creative Consultancy</a>
+        <a class="dropdown-item" href="products.html">Product Designing</a>
+        <a class="dropdown-item" href="products.html">Content Creation</a>
+        <a class="dropdown-item" href="products.html">Online Brand Presence</a>
+        <a class="dropdown-item" href="products.html">Product Photography</a>
+        <a class="dropdown-item" href="products.html">Photo & Video Ad Production</a>
+        <a class="dropdown-item" href="products.html">Integrated Marketing Solution</a>
+    </div>
     <div class="whatsapp">
         <a href="https://wa.me/917992434053" target="_blank">
             <img src="img/whatsapp.png" height="50px">
@@ -333,7 +385,7 @@
 
     <!-- ***** Awesome Features Start ***** -->
     <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" style="padding-top: 25px;" id="otherservice">
-        <div class="container">
+        <div class="container1">
             <div class="row">
                 <div class="col-12">
                     <!-- Heading Text -->
@@ -343,126 +395,215 @@
                     </div>
                 </div>
             </div>
-
             <div class="row">
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-star" aria-hidden="true"></i>
-                        <h5>Branding</h5>
-                        <p>Helping companies create a brand identity that is highly valuable and unique</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Branding</h5>
+                                <p>Helping companies create a brand identity that is highly valuable and unique</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                        <h5>Social Media Management</h5>
-                        <p>Making your business stand out on platforms like Facebook, Instagram, Twitter, YouTube, etc.</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-instagram" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Social Media Management</h5>
+                                <p>Making your business stand out on platforms like Facebook, Instagram, Twitter, YouTube, etc.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-crown" aria-hidden="true"></i>
-                        <h5>Logo Designing</h5>
-                        <p>Creating a brand mark to help customers recognize and understand your business</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-crown" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Logo Designing</h5>
+                                <p>Creating a brand mark to help customers recognize and understand your business</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-palette" aria-hidden="true"></i>
-                        <h5>Graphic Designing</h5>
-                        <p>Attractive visual content for a better interaction with your potential customers</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-palette" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Graphic Designing</h5>
+                                <p>Attractive visual content for a better interaction with your potential customers</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-desktop" aria-hidden="true"></i>
-                        <h5>Website Devlopment</h5>
-                        <p>Interactive, user-friendly and creative websites to make your business online</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-desktop" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Website Devlopment</h5>
+                                <p>Interactive, user-friendly and creative websites to make your business online</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-search" aria-hidden="true"></i>
-                        <h5>Search Engine Optimization</h5>
-                        <p>Get higher rankings than your competitors on Google and other similar search engines</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-search" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Search Engine Optimization</h5>
+                                <p>Get higher rankings than your competitors on Google and other similar search engines</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-printer" aria-hidden="true"></i>
-                        <h5>Designs for Print</h5>
-                        <p>Conveying the right information to your audience through aesthetic print media designs</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-printer" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Designs for Print</h5>
+                                <p>Giving the right information to your audience through aesthetic print media designs</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-announcement" aria-hidden="true"></i>
-                        <h5>Advertisement & Analytics</h5>
-                        <p>Assisting you to get the best return on investment from your advertisement budget</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-announcement" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Advertisement & Analytics</h5>
+                                <p>Assisting you to get the best return on investment from your advertisement budget</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-light-bulb" aria-hidden="true"></i>
-                        <h5>Creative Consultancy</h5>
-                        <p>Interact with your audience in a better way with the help of our creative solutions</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-light-bulb" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Creative Consultancy</h5>
+                                <p>Interact with your audience in a better way with the help of our creative solutions</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-gift" aria-hidden="true"></i>
-                        <h5>Product Designing</h5>
-                        <p>Serving brands with attractive product designs to help them stand out in the market</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-gift" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Product Designing</h5>
+                                <p>Serving brands with attractive product designs to help them stand out in the market</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-clipboard" aria-hidden="true"></i>
-                        <h5>Content Creation</h5>
-                        <p>Allow us to help you create informative and engaging content for your customers</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-clipboard" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Content Creation</h5>
+                                <p>Allow us to help you create informative and engaging content for your customers</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-world" aria-hidden="true"></i>
-                        <h5>Online Brand Presence</h5>
-                        <p>Making your business visible and accessible to a larger set of potential customers online</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-world" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Online Brand Presence</h5>
+                                <p>Making your business visible and accessible to a larger set of potential customers online</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-camera" aria-hidden="true"></i>
-                        <h5>Product Photography</h5>
-                        <p>Product visuals are very important, our expert professionals can help you enhance it</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-camera" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Product Photography</h5>
+                                <p>Product visuals are very important, our expert professionals can help you enhance it</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-video-clapper" aria-hidden="true"></i>
-                        <h5>Photo & Video Ad Production</h5>
-                        <p>Engaging photo and video ads for your ad campaigns to take your brand to the next level</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-video-clapper" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Photo & Video Ad Production</h5>
+                                <p>Engaging photo and video ads for your ad campaigns to take your brand to the next level</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Feature Start -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-feature">
-                        <i class="ti-stats-up" aria-hidden="true"></i>
-                        <h5>Integrated Marketing Solution</h5>
-                        <p>Equipping businesses by providing a one-stop solution for all marketing needs</p>
+                        <div class="row">
+                            <div class="col-lg-3-icon">
+                                <i class="ti-stats-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-9-icon">
+                                <h5>Integrated Marketing Solution</h5>
+                                <p>Equipping businesses by providing a one-stop solution for all marketing needs</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -472,7 +613,7 @@
     <!-- ***** Awesome Features End ***** -->
 
     <!-- ***** Video Area Start ***** -->
-    <div class="video-section">
+    <div class="video-section" style="background: #ffffff">
         <div class="container">
             <div class="row">
                 <div class="col-12 hello-gif">
@@ -999,8 +1140,27 @@
             <p>Copyright ©2020 Loons</a></p>
         </div>
     </footer>
-    <!-- ***** Footer Area Start ***** -->
+    <script>
+    function openNav1() {
+      document.getElementById("mySidenav1").style.width = "80%";
+      // document.getElementById("mySidenav1").style.border-right = "5px dashed";
+    }
 
+    function closeNav1() {
+      document.getElementById("mySidenav1").style.width = "0";
+      // document.getElementById("mySidenav1").style.border-right = "0";
+    }
+
+    function openNav2() {
+      document.getElementById("mySidenav2").style.width = "100%";
+    }
+
+    function closeNav2() {
+      document.getElementById("mySidenav2").style.width = "0";
+    }
+    </script>
+    <!-- ***** Footer Area Start ***** -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <!-- Jquery-2.2.4 JS -->
     <script src="js/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
