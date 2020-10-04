@@ -1889,3 +1889,12 @@ header:hover .rotating-dashed .dashing i {
     font-size: 16px;
     line-height: 46px;
 }
+
+.about-page-animation svg path {
+    border-top: 2px solid #ffffff;
+}
+
+.single-special {
+    background: #ffffff;
+    border: 5px dashed #343a40;
+}
