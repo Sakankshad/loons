@@ -10,7 +10,39 @@
 
     <!-- Title -->
     <title>Loons</title>
+    <style type="text/css">
+        @font-face {
+          font-family: Hobo;
+          src: url(fonts/hobostd.otf);
+        }
+        .typer {
+            top: 0px;
+            position: fixed;
+            text-align: center;
+            font-size: 4rem;
+            color: #f8951d;
+            width: 100%;
+            height: 100vh;
+            background: #ffffff;
+            z-index: 21474836470;
 
+        }
+
+        @media (max-width: 768px) {
+
+        .typer {
+            font-size: 2rem !important;
+        }
+
+        }
+
+        .preload-highlight {
+            color: #00abb6;
+            font-family: Hobo;
+        }
+    </style>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/demos.js"></script>
     <!-- Favicon -->
     <link rel="icon" href="img/loons-logo-icon.png">
 
@@ -25,12 +57,25 @@
 <body>
     <!-- Preloader Start -->
     <div id="preloader">
-        <div class="load"></div>
+        <div class="typer" >
+            <div style="padding-top: 42vh;">
+                <div id="basic" style="display: inline-block;">We</div>
+                <div class="type-wrap" style="display: inline-block;">
+                    <div id="typed-strings">
+                      <p>sound <span class="preload-highlight">Crazy</span>^1000</p>
+                      <p>look <span class="preload-highlight">Crazy</span>^1000</p>
+                      <p>work <span class="preload-highlight">Crazy</span>^1000</p>
+                      <p>are <span class="preload-highlight">Lo</span><span style="font-family: Hobo;">O</span><span class="preload-highlight">ns</span></p>
+                    </div>
+                    <span id="typed" style="white-space:pre;"></span>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- ***** Header Area Start ***** -->
     <header class="header_area animated" style="padding: 0 !important; background-color: #ffffff;">
-        <div style="padding: 2.5px 4%; border-bottom: 5px dashed #e6e7e8;">
+        <div class="highlight-dashed" style="padding: 2.5px 4%; background: #ffffff;">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <!-- Menu Area Start -->
@@ -41,28 +86,36 @@
                                 <a class="navbar-brand" href="#">
                                     <img src="img/loons-logo-without-background.png" height="60" >
                                 </a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                                <button class="navbar-toggler"><span class="navbar-toggler-icon" onclick="openNav1()"></span></button>
                                 <!-- Menu Area -->
-                                <div class="collapse navbar-collapse" id="ca-navbar">
+                                <div class="collapse navbar-collapse" id="ca-navbar" >
                                     <ul class="navbar-nav ml-auto" id="nav">
                                         <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
                                         <li class="nav-item active"><a class="nav-link" href="#home">Know us</a></li>
                                         <li class="nav-item dropdown">
                                           <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align: center !important;">Services</a>
                                           <div class="dropdown-menu" aria-labelledby="dropdown04">
-                                            <a class="dropdown-item" href="products.html">Jellytos</a>
-                                            <a class="dropdown-item" href="products.html">Popping Jelly</a>
-                                            <a class="dropdown-item" href="products.html">Loose Jelly</a>
-                                            <a class="dropdown-item" href="products.html">Popping Drink</a>
-                                            <a class="dropdown-item" href="products.html">Jellify</a>
-                                            <a class="dropdown-item" href="products.html">Fruit Jelly</a>
-                                            <a class="dropdown-item" href="products.html">Jelly Sweets</a>
+                                            <a class="dropdown-item" href="products.html">Branding</a>
+                                            <a class="dropdown-item" href="products.html">Social Media Management</a>
+                                            <a class="dropdown-item" href="products.html">Logo Designing</a>
+                                            <a class="dropdown-item" href="products.html">Graphic Designing</a>
+                                            <a class="dropdown-item" href="products.html">Website Devlopment</a>
+                                            <a class="dropdown-item" href="products.html">Search Engine Optimization</a>
+                                            <a class="dropdown-item" href="products.html">Designs for Print</a>
+                                            <a class="dropdown-item" href="products.html">Advertisement & Analytics</a>
+                                            <a class="dropdown-item" href="products.html">Creative Consultancy</a>
+                                            <a class="dropdown-item" href="products.html">Product Designing</a>
+                                            <a class="dropdown-item" href="products.html">Content Creation</a>
+                                            <a class="dropdown-item" href="products.html">Online Brand Presence</a>
+                                            <a class="dropdown-item" href="products.html">Product Photography</a>
+                                            <a class="dropdown-item" href="products.html">Photo & Video Ad Production</a>
+                                            <a class="dropdown-item" href="products.html">Integrated Marketing Solution</a>
                                           </div>
                                         </li>
                                         <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
                                     </ul>
                                     <div class="sing-up-button d-lg-none">
-                                        <a href="#">Enquire Now</a>
+                                        <a href="#contact">Enquire Now</a>
                                     </div>
                                 </div>
                             </nav>
@@ -71,127 +124,79 @@
                     <!-- Signup btn -->
                     <div class="col-12 col-lg-2">
                         <div class="sing-up-button d-none d-lg-block">
-                            <a href="#">Enquire Now</a>
+                            <a href="#contact">Enquire Now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div style="background: rgba(255, 230, 48, 1); height: 3px; position: absolute; bottom: 0px; width: 100%;"></div> -->
+        <div class="rotating-dashed">
+            <span class="dashing"><i></i></span>
+        </div>
     </header>
     <!-- ***** Header Area End ***** -->
+    <div id="mySidenav1" class="sidenav" style="z-index: 9999999999999999;">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+            <ul class="navbar-nav ml-auto" id="nav">
+                <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#home">Know us</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#home" onclick="openNav2()">Services &rarr;</a></li>
+                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+            </ul>
+            <div class="mobile-enquiry-button" onclick="closeNav1()">
+                <a href="#contact" style="text-align: center;">Enquire Now</a>
+            </div>
 
+
+    </div>
+    <div id="mySidenav2" class="sidenav" style="z-index: 99999999999999999; background: #f8951d">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()" style="font-size: 40px !important;">&larr;</a>
+        <a class="dropdown-item" href="products.html">Branding</a>
+        <a class="dropdown-item" href="products.html">Social Media Management</a>
+        <a class="dropdown-item" href="products.html">Logo Designing</a>
+        <a class="dropdown-item" href="products.html">Graphic Designing</a>
+        <a class="dropdown-item" href="products.html">Website Devlopment</a>
+        <a class="dropdown-item" href="products.html">Search Engine Optimization</a>
+        <a class="dropdown-item" href="products.html">Designs for Print</a>
+        <a class="dropdown-item" href="products.html">Advertisement & Analytics</a>
+        <a class="dropdown-item" href="products.html">Creative Consultancy</a>
+        <a class="dropdown-item" href="products.html">Product Designing</a>
+        <a class="dropdown-item" href="products.html">Content Creation</a>
+        <a class="dropdown-item" href="products.html">Online Brand Presence</a>
+        <a class="dropdown-item" href="products.html">Product Photography</a>
+        <a class="dropdown-item" href="products.html">Photo & Video Ad Production</a>
+        <a class="dropdown-item" href="products.html">Integrated Marketing Solution</a>
+    </div>
     <div class="whatsapp">
         <a href="https://wa.me/917992434053" target="_blank">
             <img src="img/whatsapp.png" height="50px">
         </a>
     </div>
 
-    <!-- ***** Wellcome Area Start ***** -->
-    <section class="wellcome_area clearfix" id="home">
-        <div class="row landing-view">
-            <div class="col-lg-6" style="margin: 0 auto;">
-                <div class="col-lg-gif" style="margin: auto;">
-                    <!-- <img src="img/ezgif.com-video-to-gif.gif" width="100%"> -->
-                    <img src="img/giphy.webp" width="100%">
+    <section style="height: 150px; width: 100%; background: rgba(255,255,0,1); ">
+        
+    </section>
+
+    <section class="wellcome_area clearfix" id="home" style="background: rgba(255,255,0,1); height: auto !important;">
+        <div class="row landing-view" style="background: rgba(255,255,0,1);">
+            <div class="container2">
+                <div style="text-align: center; padding-top: 50px;">
+                    <h1>Know Us</h1>                
                 </div>
-            </div>
-            <div class="col-lg-6" style="margin: auto;">
-                <div class="wellcome-heading">
-                    <h2>
-                        Creative thinking
-                        <br>
-                        takes a lot of time
-                    </h2>
-                    <h3>C</h3>
-                    <p class="sub-heading" style="font-size: 25px !important; color: #939598 !important;">allow us to buy you some time</p>
-                </div>
-                <div class="get-start-area">
-                            <!-- Form Start -->
-                            <form action="#" method="post" class="form-inline">
-                                <input type="email" class="form-control email" placeholder="99XXXXXXXX">
-                                <input type="submit" class="submit" value="Request a Callback">
-                            </form>
-                            <!-- Form End -->
-                        </div>
             </div>
         </div>
-        <!-- <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 col-md">
-                    <iframe src="https://giphy.com/embed/u47uzYbZu3r535TmGr" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                    <img src="https://media.giphy.com/media/35MAdPmdmRO3oCmWN0/giphy.gif" height="400">
-                    <div class="wellcome-heading">
-                        <h2>Colorlib app</h2>
-                        <h3>C</h3>
-                        <p>Everything You Need. To Start Selling Online Beautifully</p>
-                    </div>
-                    <div class="get-start-area"> -->
-                        <!-- Form Start -->
-                        <!-- <form action="#" method="post" class="form-inline">
-                            <input type="email" class="form-control email" placeholder="name@company.com">
-                            <input type="submit" class="submit" value="Get Started">
-                        </form> -->
-                        <!-- Form End -->
-                    <!-- </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Welcome thumb -->
-        <!-- <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
-            <img src="img/bg-img/welcome-img.png" alt="">
-        </div> -->
+    </section>
+    <section style="height: auto; background: rgba(255,255,0,1);">
+        <div style="height: 200px;">
+            <svg width="100%" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID" d=""/></svg>
+        </div>
     </section>
     <!-- ***** Wellcome Area End ***** -->
 
     <!-- ***** Special Area Start ***** -->
-    <section class="special-area bg-white section_padding_100" id="about" >
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Heading Area -->
-                    <div class="section-heading text-center">
-                        <h2>What Makes us Special?</h2>
-                        <div class="line-shape"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Special Area -->
-                <div class="col-12 col-md-4">
-                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="single-icon">
-                            <img src="img/idea.png" width="100px">
-                        </div>
-                        <h4>Creative Solutions</h4>
-                        <p>We Think, Design and Execute. We stay integrated with comprehensive creative solutions on one table.</p>
-                    </div>
-                </div>
-                <!-- Single Special Area -->
-                <div class="col-12 col-md-4">
-                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="single-icon">
-                            <img src="img/computer.png" width="100px">
-                        </div>
-                        <h4>Technological Applications</h4>
-                        <p>We strengthen your interaction with your clients with high end tech, innovations and advanced solutions.</p>
-                    </div>
-                </div>
-                <!-- Single Special Area -->
-                <div class="col-12 col-md-4">
-                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="single-icon">
-                            <img src="img/support.png" width="100px">
-                        </div>
-                        <h4>Client-Centric Approach</h4>
-                        <p>Listening is our key strength. We Analyse and Understand your vision and assist you achieve your goal.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="special-area bg-white section_padding_100" id="about" style="padding-top: 0px !important;">
         <!-- Special Description Area -->
-        <div class="special_description_area mt-50" id="social">
+        <div class="special_description_area" id="social" style="padding-top: 0px !important;">
             <div>
                 <div class="row">
                     <div class="col-lg-6">
@@ -206,7 +211,7 @@
                             Is your social presence actually making you reach a larger audience? If No, You are losing a rich opportunity.
                             <br>
                             <br>
-                            Social Media is a hub of potential customers and if you are not finding your market place here, you are way behind. Mark a strong social media presence to promote and advertise your business. It is not just a potential market to interact with new audiences but also gives you an opportunity to know your customers directly. 
+                            Social media marketing proves to be a powerful way for businesses of all sizes to diagnose market scenario, reach prospects and customers. The digital age has brought your customers online and so it is the time you bring your business online too. 
                             <br>
                             <br>
                             Give your brand a captivating representation on Social Media. Not a big deal, we can help you with that.
@@ -242,7 +247,7 @@
                             Want to expand your market reach and turn scrolling audiences into new customers? Here we are to help you stand out.
                             <br>
                             <br>
-                            Create your own market on the digital landscape with a website and make your product or services more accessible. It can be anything from just an informative website to a full scale e-commerce website. We have a lot to offer, let's get started!
+                            Create your own market on the digital landscape with a website and make your product or services more accessible. It can be anything from just an informative website to a full-scale e-commerce website. You demand it, and we have it. With an edge to make your business mightier, we have much more to offer.
                             </p>
                             <div class="col-lg-2" style="margin-top: 30px; padding-bottom: 25px;">
                                 <div class="sing-up-button d-lg-block">
@@ -262,307 +267,27 @@
     </section>
     <!-- ***** Special Area End ***** -->
 
-    <!-- ***** Awesome Features Start ***** -->
-    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" style="padding-top: 25px;" id="otherservice">
+    <!-- ***** CTA Area Start ***** -->
+    <section class="our-monthly-membership section_padding_50 clearfix">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Heading Text -->
-                    <div class="section-heading text-center">
-                        <h2>What we Offer</h2>
-                        <div class="line-shape"></div>
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="membership-description">
+                        <h2>Want to know More About us?</h2>
+                        <p>Let's get in touch and discuss how we can help to take your brand to the next level.</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="ti-user" aria-hidden="true"></i>
-                        <h5>Awesome Experience</h5>
-                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="ti-pulse" aria-hidden="true"></i>
-                        <h5>Fast and Simple</h5>
-                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="ti-dashboard" aria-hidden="true"></i>
-                        <h5>Clean Code</h5>
-                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="ti-palette" aria-hidden="true"></i>
-                        <h5>Perfect Design</h5>
-                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="ti-crown" aria-hidden="true"></i>
-                        <h5>Best Industry Leader</h5>
-                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <!-- Single Feature Start -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-feature">
-                        <i class="ti-headphone" aria-hidden="true"></i>
-                        <h5>24/7 Online Support</h5>
-                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- ***** Awesome Features End ***** -->
-
-    <!-- ***** Video Area Start ***** -->
-    <div class="video-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 hello-gif">
-                    <!-- Video Area Start -->
-                    <div class="video-area">
-                        <img src="img/hello1.gif" width="100%">
-                        <!-- <div class="video-play-btn">
-                            <a href="https://www.youtube.com/watch?v=f5BBJ4ySgpo" class="video_btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ***** Video Area End ***** -->
-
-    <!-- ***** Cool Facts Area Start ***** -->
-    <section class="cool_facts_area clearfix">
-        <div class="container">
-            <div class="row" >
-                <!-- Single Cool Fact-->
-                <div class="col-12 col-md-3 col-lg-3">
-                    <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="counter-area col-lg-6" style="text-align: right;">
-                            <h3><span class="counter">3</span></h3>
-                        </div>
-                        <div class="cool-facts-content col-lg-6">
-                            <i class="ion-calendar"></i>
-                            <p>YEARS OF <br> EXPERIENCE</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Cool Fact-->
-                <div class="col-12 col-md-3 col-lg-3">
-                    <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="counter-area col-lg-6" style="text-align: right;">
-                            <h3><span class="counter">52</span></h3>
-                        </div>
-                        <div class="cool-facts-content col-lg-6">
-                            <i class="ion-android-desktop"></i>
-                            <p>PROJECTS <br> COMPLETED</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Cool Fact-->
-                <div class="col-12 col-md-3 col-lg-3">
-                    <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="counter-area col-lg-6" style="text-align: right;">
-                            <h3><span class="counter">11</span></h3>
-                        </div>
-                        <div class="cool-facts-content col-lg-6">
-                            <i class="ion-ios-list"></i>
-                            <p>DIFFERENT <br>INDUSTRIES</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Cool Fact-->
-                <div class="col-12 col-md-3 col-lg-3">
-                    <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="counter-area col-lg-6" style="text-align: right;">
-                            <h3><span class="counter">40</span></h3>
-                        </div>
-                        <div class="cool-facts-content col-lg-6">
-                            <i class="ion-happy-outline"></i>
-                            <p>HAPPY <br>CLIENTS</p>
-                        </div>
+                <div class="col-md-4">
+                    <div class="get-started-button wow bounceInDown" data-wow-delay="0.5s">
+                        <a href="#">Get Started</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ***** Cool Facts Area End ***** -->
+    <!-- ***** CTA Area End ***** -->
 
-    <!-- ***** App Screenshots Area Start ***** -->
-    <section class="app-screenshots-area bg-white section_padding_0_100 clearfix" id="screenshot" style="background-image: url('img/BG1.jpg') !important; background-position: bottom center; background-size: cover;">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <!-- Heading Text  -->
-                    <div class="section-heading">
-                        <h2 style="color: #04a9b4 !important; font-weight: bold;">Creative Content</h2>
-                        <div class="line-shape"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <!-- App Screenshots Slides  -->
-                    <div class="app_screenshots_slides owl-carousel">
-                        <div class="single-shot">
-                            <img src="img/creative1.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/creative7.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/creative3.png" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/creative4.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/creative8.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/creative6.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** App Screenshots Area End *****====== -->
-
-    <!-- ***** Pricing Plane Area Start *****==== -->
-    <!-- <section class="pricing-plane-area section_padding_100_70 clearfix" id="pricing">
-        <div class="container">
-            <div class="row">
-                <div class="col-12"> -->
-                    <!-- Heading Text  -->
-                    <!-- <div class="section-heading text-center">
-                        <h2>Pricing Plan</h2>
-                        <div class="line-shape"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row no-gutters">
-                <div class="col-12 col-md-6 col-lg-3"> -->
-                    <!-- Package Price  -->
-                    <!-- <div class="single-price-plan text-center"> -->
-                        <!-- Package Text  -->
-                        <!-- <div class="package-plan">
-                            <h5>Starter Plan</h5>
-                            <div class="ca-price d-flex justify-content-center">
-                                <span>$</span>
-                                <h4>29</h4>
-                            </div>
-                        </div>
-                        <div class="package-description">
-                            <p>Up to 10 users monthly</p>
-                            <p>Unlimited updates</p>
-                            <p>Free host &amp; domain</p>
-                            <p>24/7 Support</p>
-                            <p>10 Unique Users</p>
-                        </div> -->
-                        <!-- Plan Button  -->
-                        <!-- <div class="plan-button">
-                            <a href="#">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3"> -->
-                    <!-- Package Price  -->
-                    <!-- <div class="single-price-plan text-center"> -->
-                        <!-- Package Text  -->
-                        <!-- <div class="package-plan">
-                            <h5>Basic Plan</h5>
-                            <div class="ca-price d-flex justify-content-center">
-                                <span>$</span>
-                                <h4>49</h4>
-                            </div>
-                        </div>
-                        <div class="package-description">
-                            <p>Up to 10 users monthly</p>
-                            <p>Unlimited updates</p>
-                            <p>Free host &amp; domain</p>
-                            <p>24/7 Support</p>
-                            <p>10 Unique Users</p>
-                        </div> -->
-                        <!-- Plan Button  -->
-                        <!-- <div class="plan-button">
-                            <a href="#">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3"> -->
-                    <!-- Package Price  -->
-                    <!-- <div class="single-price-plan active text-center"> -->
-                        <!-- Package Text  -->
-                        <!-- <div class="package-plan">
-                            <h5>Advenced Plan</h5>
-                            <div class="ca-price d-flex justify-content-center">
-                                <span>$</span>
-                                <h4>69</h4>
-                            </div>
-                        </div>
-                        <div class="package-description">
-                            <p>Up to 10 users monthly</p>
-                            <p>Unlimited updates</p>
-                            <p>Free host &amp; domain</p>
-                            <p>24/7 Support</p>
-                            <p>10 Unique Users</p>
-                        </div> -->
-                        <!-- Plan Button  -->
-                        <!-- <div class="plan-button">
-                            <a href="#">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3"> -->
-                    <!-- Package Price  -->
-                    <!-- <div class="single-price-plan text-center"> -->
-                        <!-- Package Text  -->
-                        <!-- <div class="package-plan">
-                            <h5>Community Plan</h5>
-                            <div class="ca-price d-flex justify-content-center">
-                                <span>$</span>
-                                <h4>99</h4>
-                            </div>
-                        </div>
-                        <div class="package-description">
-                            <p>Up to 10 users monthly</p>
-                            <p>Unlimited updates</p>
-                            <p>Free host &amp; domain</p>
-                            <p>24/7 Support</p>
-                            <p>10 Unique Users</p>
-                        </div> -->
-                        <!-- Plan Button  -->
-                        <!-- <div class="plan-button">
-                            <a href="#">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- ***** Pricing Plane Area End ***** -->
-
+    
     <!-- ***** Client Feedback Area Start ***** -->
     <section class="clients-feedback-area bg-white section_padding_100 clearfix" id="testimonials">
         <div class="container">
@@ -575,7 +300,11 @@
                                 <i class="fa fa-quote-left" aria-hidden="true"></i>
                             </div>
                             <div class="client-description text-center">
-                                <p>“ I have been using it for a number of years. I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job and save me the coding time and just the general hassle of hosting. ”</p>
+                                <p>“ Loons is a one in a million combination of creative designers and web
+                                    developers who just...gets it. It's hard to pinpoint exactly why it's fantastic
+                                    to work with them, but it starts with their consistent reliability both in
+                                    meeting a deadline and exceeding expectations. I was always
+                                    delighted to know that Loons was on my project. ”</p>
                             </div>
                             <div class="star-icon text-center">
                                 <i class="ion-ios-star"></i>
@@ -585,8 +314,8 @@
                                 <i class="ion-ios-star"></i>
                             </div>
                             <div class="client-name text-center">
-                                <h5>Aigars Silkalns</h5>
-                                <p>Ceo Colorlib</p>
+                                <h5>Dr. Ashutosh Trivedi</h5>
+                                <p>Oro Dental Speciality Clinic</p>
                             </div>
                         </div>
                         <!-- Client Feedback Text  -->
@@ -595,7 +324,7 @@
                                 <i class="fa fa-quote-left" aria-hidden="true"></i>
                             </div>
                             <div class="client-description text-center">
-                                <p>“ I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job and save me the coding time and just the general hassle of hosting. ”</p>
+                                <p>“ Our website was developed by Loons. I had an amazing experience working with them, the coordination was excellent. They presented an excellent quality of work. I trust Loons for my digital business growth and will surely recommend it to someone looking for technological solutions along with creativity....Keep up the good work guys! ”</p>
                             </div>
                             <div class="star-icon text-center">
                                 <i class="ion-ios-star"></i>
@@ -605,8 +334,8 @@
                                 <i class="ion-ios-star"></i>
                             </div>
                             <div class="client-name text-center">
-                                <h5>Jennifer</h5>
-                                <p>Developer</p>
+                                <h5>Pushpraj Sinha</h5>
+                                <p>Kavitashree Homes</p>
                             </div>
                         </div>
                         <!-- Client Feedback Text  -->
@@ -615,7 +344,7 @@
                                 <i class="fa fa-quote-left" aria-hidden="true"></i>
                             </div>
                             <div class="client-description text-center">
-                                <p>“ I have been using it for a number of years. I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job.”</p>
+                                <p>“ Liked the service and their work ethics. Good communication and cooperation throughout the work period. Will surely look forward to working with them in the future. They are really good with technical and creative stuff, never missed a deadline and always suggested solutions even beyond the projects alloted. All in all, a complete package.”</p>
                             </div>
                             <div class="star-icon text-center">
                                 <i class="ion-ios-star"></i>
@@ -625,8 +354,8 @@
                                 <i class="ion-ios-star"></i>
                             </div>
                             <div class="client-name text-center">
-                                <h5>Helen</h5>
-                                <p>Marketer</p>
+                                <h5>Adv. Achint Kumar</h5>
+                                <p>Legal Vibes - Advocates and Solicitors</p>
                             </div>
                         </div>
                         <!-- Client Feedback Text  -->
@@ -673,88 +402,14 @@
     </section>
     <!-- ***** Client Feedback Area End ***** -->
 
-    <!-- ***** CTA Area Start ***** -->
-    <section class="our-monthly-membership section_padding_50 clearfix">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <div class="membership-description">
-                        <h2>Want to know More About us?</h2>
-                        <p>Let's get in touch and discuss how we can help to take your brand to the next level.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="get-started-button wow bounceInDown" data-wow-delay="0.5s">
-                        <a href="#">Get Started</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** CTA Area End ***** -->
 
-    <!-- ***** Our Team Area Start ***** -->
-    <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <!-- Heading Text  -->
-                    <div class="section-heading">
-                        <h2>Meet the Experts!</h2>
-                        <div class="line-shape"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin: auto;">
-                <div class="col-12 col-md-6 col-lg-3">
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member">
-                        <div class="member-image">
-                            <img src="img/sakanksha.jpg" alt="">
-                            <div class="team-hover-effects">
-                                <div class="team-social-icon">
-                                    <a href="mailto:sakanksha.iitkgp@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                                    <a href="https://www.linkedin.com/in/sakankshad/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                    <a href="https://www.facebook.com/sakanksha.deo/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="https://www.instagram.com/sakankshad/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-text" style="text-align: center !important;">
-                            <h4>Sakanksha Deo</h4>
-                            <p>Co-Founder & Head of Strategy</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member">
-                        <div class="member-image">
-                            <img src="img/author_meenakshi.jpg" alt="">
-                            <div class="team-hover-effects">
-                                <div class="team-social-icon">
-                                    <a href="mailto:meenakshi.loons@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                                    <a href="https://www.linkedin.com/in/meenakshisharma036/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                    <a href="https://www.facebook.com/meenakshi.sharma.792" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="https://www.instagram.com/meenakshis_036/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-text" style="text-align: center !important;">
-                            <h4>Meenakshi</h4>
-                            <p>Co-Founder & Head of Operations</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                </div>
-            </div>
-        </div>
+    
+    <section style="background: #ffffff; height: 50px;" id="contact">
+        
     </section>
-    <!-- ***** Our Team Area End ***** -->
 
     <!-- ***** Contact Us Area Start ***** -->
-    <section class="footer-contact-area section_padding_100 clearfix" id="contact">
+    <section class="footer-contact-area section_padding_100 clearfix" >
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -779,26 +434,32 @@
                 <div class="col-md-6">
                     <!-- Form Start-->
                     <div class="contact_from">
-                        <form action="#" method="post">
+                        <form action="#" class="billing-form enquiry" id="enquiry-form">
                             <!-- Message Input Area Start -->
                             <div class="contact_input_area">
                                 <div class="row">
                                     <!-- Single Input Area Start -->
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                                            <input type="text" class="form-control" name="Name" id="name" placeholder="Your Name" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="Number" id="number" placeholder="Your Number" value="">
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail" required>
+                                            <input type="email" class="form-control" name="Email" id="email" placeholder="Your E-mail" value="">
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Your Message *" required></textarea>
+                                            <textarea name="Details" class="form-control" id="message" cols="30" rows="4" placeholder="Your Message" required></textarea>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
@@ -819,7 +480,7 @@
     <!-- ***** Footer Area Start ***** -->
     <footer class="footer-social-icon text-center section_padding_70 clearfix">
         <!-- footer logo -->
-        <a class="navbar-brand" href="#" style="padding-bottom: 10px;">
+        <a class="navbar-brand" href="#" style="padding-bottom: 10px; margin: 0 !important">
             <img src="img/loons-logo-without-background.png" height="60" >
         </a>
         <!-- social icon-->
@@ -845,8 +506,22 @@
             <p>Copyright ©2020 Loons</a></p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js" integrity="sha512-0RYHqoOARmpxNEw+esxNHXaPoXWU36swC8a5BgmnexZNmOhDewCvKRNWitJiwf40o8JUsg831Uu/cRIN7sCdKA==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/wavify.js"></script>
+    <script type="text/javascript" src="js/jquery.wavify.js"></script>
+    <script type="text/javascript">
+        var myWave = $('#myID').wavify({
+          height: 50,
+          bones: 3,
+          amplitude: 40,
+          color: 'rgba(255, 255, 255, 1)',
+          speed: .25
+        });
+    </script>
+    <script src="js/navBar.js"></script>
     <!-- ***** Footer Area Start ***** -->
-
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <!-- Jquery-2.2.4 JS -->
     <script src="js/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
@@ -861,6 +536,8 @@
     <script src="js/footer-reveal.min.js"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
+    <script src="js/formData.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> -->
 
 </body>
 
