@@ -44,6 +44,11 @@
     padding: 0;
 }
 
+@font-face {
+          font-family: Hobo;
+          src: url(fonts/hobostd.otf);
+        }
+
 #img1 {
   background-image: url('img/Jelly_Sweets.jpg');
 }
@@ -1898,3 +1903,53 @@ header:hover .rotating-dashed .dashing i {
     background: #ffffff;
     border: 5px dashed #343a40;
 }
+
+.journey svg {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+}
+.draw-arrow {
+    stroke-width: 3;
+    stroke: #f8951d;
+    fill: none;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: drawarrow;
+}
+.tail-1 {
+      animation-delay: 0.5s;
+    }
+.tail-2 {
+      animation-delay: 0.7s;
+    }
+
+@keyframes drawarrow {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.journey h4 {
+    font-family: Hobo;
+    color: #00abb6;
+}
+
+/*.journey .single-icon {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}*/
+
+/*.journey img {
+    margin: auto;
+    animation: largecircle 2000ms infinite;
+}
+
+@keyframes largecircle {
+50% {
+    width: 200px;
+}
+}*/
