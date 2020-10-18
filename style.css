@@ -1410,9 +1410,9 @@ p {
         margin: 0 auto !important;
     }
 
-    .number {
+    /*.number {
         margin-bottom: 20px !important;
-    }
+    }*/
 
     .wellcome_area {
         padding-bottom: 50px;
@@ -1432,6 +1432,12 @@ p {
     }
 }
 
+@media (max-width: 504px) {
+    .number {
+        margin-bottom: 20px !important;
+    }
+
+}
 
 .navbar-nav li {
     margin: auto;
@@ -1901,7 +1907,7 @@ header:hover .rotating-dashed .dashing i {
 
 .single-special {
     background: #ffffff;
-    border: 5px dashed #343a40;
+    border: 5px dashed #e6e7e8;
 }
 
 .journey svg {
@@ -1933,7 +1939,7 @@ header:hover .rotating-dashed .dashing i {
 }
 
 .journey h4 {
-    font-family: Hobo;
+    /*font-family: Hobo;*/
     color: #00abb6;
 }
 
@@ -1953,3 +1959,116 @@ header:hover .rotating-dashed .dashing i {
     width: 200px;
 }
 }*/
+
+
+@media (max-width: 767px) {
+.service-call-to-action h2, .service-call-to-action p {
+    text-align: center;
+}
+.service-call-to-action .get-start-area {
+    margin-top: 20px;
+}
+}
+
+.service-call-to-action h2 {
+    color: #00abb6
+}
+
+.service-call-to-action p {
+    color: #f8951d
+}
+
+.service-call-to-action {
+    border-top: 5px dashed #e6e7e8;
+    border-bottom: 5px dashed #e6e7e8;
+}
+
+.section-mobile {
+  visibility: visible;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.section-desktop {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.div-parent {
+  position: relative;
+  height: auto;
+}
+
+.div-child {
+  margin: auto 0;
+}
+
+.mobile {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  color: #d6d4d3;
+}
+
+.desktop {
+  font-size: 40px !important;
+  color: #d6d4d3;
+}
+
+.mobile-arrow {
+  transform: scale(2,3);
+  width: 25%;
+  margin: 0 auto;
+  color: #00abb6;
+}
+
+.col-lg-segment {
+  text-align: center;
+  font-size: 23px;
+  line-height: 1;
+  color: #636466 !important;
+}
+
+.col-lg-arrow {
+  opacity: 50%;
+  text-align: center;
+  color: #00abb6;
+}
+
+@media (min-width: 767px) {
+
+.col-lg-segment {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 16%;
+  flex: 0 0 16%;
+  max-width: 16%;
+}
+
+.col-lg-arrow {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 5%;
+  flex: 0 0 5%;
+  max-width: 5%;
+}
+
+.section-mobile {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  padding: 0px 25px !important;
+}
+
+.section-desktop {
+  visibility: visible !important;
+  opacity: 100% !important;
+  height: auto !important;
+  padding : 45px 25px !important;
+  width: auto !important;
+}
+
+}
+
