@@ -2075,18 +2075,55 @@ header:hover .rotating-dashed .dashing i {
 
 .col-lg-stats {
     -webkit-box-flex: 0;
-  -ms-flex: 0 0 60%;
-  flex: 0 0 60%;
-  max-width: 60%; 
+  -ms-flex: 0 0 70%;
+  flex: 0 0 70%;
+  max-width: 70%; 
   text-align: left;  
   color: #00abb6;
+  font-size: 14px;
 }
 
 .col-lg-num {
     -webkit-box-flex: 0;
-  -ms-flex: 0 0 40%;
-  flex: 0 0 40%;
-  max-width: 40%; 
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%; 
   text-align: right;
   color: #00abb6;
+  font-size: 14px;
 }
+
+@media (max-width: 1265px) and (min-width: 674px) {
+ .col-lg-num ,  .col-lg-stats {
+    font-size: 18px;
+ }
+
+.col-lg-social-stats-div i {
+    font-size: 4rem !important;
+}
+
+.col-lg-social-stats-div h4 {
+    font-size: 30px;
+}
+
+ .col-lg-social-stats-div {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;  
+}
+}
+
+@media (min-width: 1265px) {
+ .col-lg-social-stats-div {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;  
+}
+}
+
+@media (max-width: 674px) {
+ .col-lg-num ,  .col-lg-stats {
+    font-size: 16px;
+ }
