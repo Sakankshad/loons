@@ -2073,3 +2073,20 @@ header:hover .rotating-dashed .dashing i {
 
 }
 
+.col-lg-stats {
+    -webkit-box-flex: 0;
+  -ms-flex: 0 0 60%;
+  flex: 0 0 60%;
+  max-width: 60%; 
+  text-align: left;  
+  color: #00abb6;
+}
+
+.col-lg-num {
+    -webkit-box-flex: 0;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+  max-width: 40%; 
+  text-align: right;
+  color: #00abb6;
+}
