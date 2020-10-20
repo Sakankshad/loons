@@ -2127,3 +2127,27 @@ header:hover .rotating-dashed .dashing i {
  .col-lg-num ,  .col-lg-stats {
     font-size: 16px;
  }
+}
+
+ .col-lg-segment p {
+    margin-top: 10px;
+    color: #00abb6;
+ }
+
+.web-mockup {
+    padding: 20px;
+}
+
+.web-mockup:hover {
+    padding: 0;
+    transition: 0.5s;
+}
+
+.section-desktop .col-lg-segment img {
+    padding: 10px;
+}
+
+.section-desktop .col-lg-segment:hover img {
+    padding: 0;
+    transition: 0.5s;
+}
