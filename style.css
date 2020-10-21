@@ -1370,7 +1370,7 @@ p {
   padding-left: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .col-lg-6 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
@@ -2039,7 +2039,7 @@ header:hover .rotating-dashed .dashing i {
   color: #00abb6;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 992px) {
 
 .col-lg-segment {
   -webkit-box-flex: 0;
@@ -2185,3 +2185,52 @@ header:hover .rotating-dashed .dashing i {
     padding: 0px !important;
     transition: 0.4s;
 }
+
+.Rightbg {
+    background-position: right !important;
+  }
+
+.Leftbg {
+  background-position: left;
+}
+
+@media (max-width: 1350px) and (min-width: 1200px) {
+.Leftbg {
+  background-position: right !important;
+}
+.Rightbg {
+  background-position: left !important;
+}
+}
+
+@media (max-width: 1125px) {
+.Leftbg {
+  background-position: right !important;
+}
+.Rightbg {
+  background-position: left !important;
+}
+}
+
+
+
+.background {
+    background-size: auto 100% !important;
+    background-repeat: no-repeat !important;
+}
+
+
+@media (min-width: 992px) {
+.Leftbg .social-description {
+    padding-right: 0px;
+    padding-left: 50px;
+}
+.Rightbg .social-description {
+    padding-right: 50px;
+    padding-left: 0px;
+}
+}
+
+/**, :after, :before {
+    box-sizing: border-box;
+}*/
