@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Humara Bihar - An initiative by Loons</title>
+    <style type="text/css">
+        @font-face {
+          font-family: Hobo;
+          src: url(fonts/hobostd.otf);
+        }
+        .typer {
+            top: 0px;
+            position: fixed;
+            text-align: center;
+            font-size: 4rem;
+            color: #f8951d;
+            width: 100%;
+            height: 100vh;
+            background: #ffffff;
+            z-index: 21474836470;
+
+        }
+
+        @media (max-width: 768px) {
+
+        .typer {
+            font-size: 2rem !important;
+        }
+
+        }
+
+        .preload-highlight {
+            color: #00abb6;
+            font-family: Hobo;
+        }
+    </style>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/demos.js"></script>
+    <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:500,d:1000,x:0,e:{x:6}}],
+              [{b:-1,d:1,x:100,p:{x:{d:1,dO:9}}},{b:0,d:2000,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,x:200,p:{x:{d:1,dO:9}}},{b:0,d:2000,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,rX:20,rY:90},{b:0,d:4000,rX:0,e:{rX:1}}],
+              [{b:-1,d:1,rY:-20},{b:0,d:4000,rY:-90,e:{rY:7}}],
+              [{b:-1,d:1,sX:2,sY:2},{b:1000,d:3000,sX:1,sY:1,e:{sX:1,sY:1}}],
+              [{b:-1,d:1,sX:2,sY:2},{b:1000,d:5000,sX:1,sY:1,e:{sX:3,sY:3}}],
+              [{b:-1,d:1,tZ:300},{b:0,d:2000,o:1},{b:3500,d:3500,tZ:0,e:{tZ:1}}],
+              [{b:-1,d:1,x:20,p:{x:{o:33,r:0.5}}},{b:0,d:1000,x:0,o:0.5,e:{x:3,o:1},p:{x:{dl:0.05,o:33},o:{dl:0.02,o:68,rd:2}}},{b:1000,d:1000,o:1,e:{o:1},p:{o:{dl:0.05,o:68,rd:2}}}],
+              [{b:-1,d:1,da:[0,700]},{b:0,d:600,da:[700,700],e:{da:1}}],
+              [{b:600,d:1000,o:0.4}],
+              [{b:-1,d:1,da:[0,400]},{b:200,d:600,da:[400,400],e:{da:1}}],
+              [{b:800,d:1000,o:0.4}],
+              [{b:-1,d:1,sX:1.1,sY:1.1},{b:0,d:1600,o:1},{b:1600,d:5000,sX:0.9,sY:0.9,e:{sX:1,sY:1}}],
+              [{b:0,d:1000,o:1,p:{o:{o:4}}}],
+              [{b:1000,d:1000,o:1,p:{o:{o:4}}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 16,
+                $SpacingY: 16
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 2000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="img/loons-logo-icon.png">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <style>
+        /*jssor slider loading skin double-tail-spin css*/
+        .jssorl-004-double-tail-spin img {
+            animation-name: jssorl-004-double-tail-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-004-double-tail-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 031 css*/
+        .jssorb031 {position:absolute;}
+        .jssorb031 .i {position:absolute;cursor:pointer;}
+        .jssorb031 .i .b {fill:#000;fill-opacity:0.6;stroke:#fff;stroke-width:1600;stroke-miterlimit:10;stroke-opacity:0.8;}
+        .jssorb031 .i:hover .b {fill:#fff;fill-opacity:1;stroke:#000;stroke-opacity:1;}
+        .jssorb031 .iav .b {fill:#fff;stroke:#000;stroke-width:1600;fill-opacity:.6;}
+        .jssorb031 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="typer" >
+            <div style="padding-top: 42vh;">
+                <div id="basic" style="display: inline-block;">We</div>
+                <div class="type-wrap" style="display: inline-block;">
+                    <div id="typed-strings">
+                      <p>sound <span class="preload-highlight">Crazy</span>^1000</p>
+                      <p>look <span class="preload-highlight">Crazy</span>^1000</p>
+                      <p>work <span class="preload-highlight">Crazy</span>^1000</p>
+                      <p>are <span class="preload-highlight">Lo</span><span style="font-family: Hobo;">O</span><span class="preload-highlight">ns</span></p>
+                    </div>
+                    <span id="typed" style="white-space:pre;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area animated" style="padding: 0 !important; background-color: #ffffff;">
+        <div class="highlight-dashed" style="padding: 2.5px 4%; background: #ffffff;">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <!-- Menu Area Start -->
+                    <div class="col-12 col-lg-10" style="padding: 0 !important;">
+                        <div class="menu_area">
+                            <nav class="navbar navbar-expand-lg navbar-light">
+                                <!-- Logo -->
+                                <a class="navbar-brand" href="#">
+                                    <img src="img/loons-logo-without-background.png" height="60" >
+                                </a>
+                                <button class="navbar-toggler"><span class="navbar-toggler-icon" onclick="openNav1()"></span></button>
+                                <!-- Menu Area -->
+                                <div class="collapse navbar-collapse" id="ca-navbar" >
+                                    <ul class="navbar-nav ml-auto" id="nav">
+                                        <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="#home">Know us</a></li>
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align: center !important;">Services</a>
+                                          <div class="dropdown-menu" aria-labelledby="dropdown04">
+                                            <a class="dropdown-item" href="products.html">Branding</a>
+                                            <a class="dropdown-item" href="products.html">Social Media Management</a>
+                                            <a class="dropdown-item" href="products.html">Logo Designing</a>
+                                            <a class="dropdown-item" href="products.html">Graphic Designing</a>
+                                            <a class="dropdown-item" href="products.html">Website Devlopment</a>
+                                            <a class="dropdown-item" href="products.html">Search Engine Optimization</a>
+                                            <a class="dropdown-item" href="products.html">Designs for Print</a>
+                                            <a class="dropdown-item" href="products.html">Advertisement & Analytics</a>
+                                            <a class="dropdown-item" href="products.html">Creative Consultancy</a>
+                                            <a class="dropdown-item" href="products.html">Product Designing</a>
+                                            <a class="dropdown-item" href="products.html">Content Creation</a>
+                                            <a class="dropdown-item" href="products.html">Online Brand Presence</a>
+                                            <a class="dropdown-item" href="products.html">Product Photography</a>
+                                            <a class="dropdown-item" href="products.html">Photo & Video Ad Production</a>
+                                            <a class="dropdown-item" href="products.html">Integrated Marketing Solution</a>
+                                          </div>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+                                    </ul>
+                                    <div class="sing-up-button d-lg-none">
+                                        <a href="#contact">Enquire Now</a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Signup btn -->
+                    <div class="col-12 col-lg-2">
+                        <div class="sing-up-button d-none d-lg-block">
+                            <a href="#contact">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rotating-dashed">
+            <span class="dashing"><i></i></span>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <div id="mySidenav1" class="sidenav" style="z-index: 9999999999999999;">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+            <ul class="navbar-nav ml-auto" id="nav">
+                <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#home">Know us</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#home" onclick="openNav2()">Services &rarr;</a></li>
+                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+            </ul>
+            <div class="mobile-enquiry-button" onclick="closeNav1()">
+                <a href="#contact" style="text-align: center;">Enquire Now</a>
+            </div>
+
+
+    </div>
+    <div id="mySidenav2" class="sidenav" style="z-index: 99999999999999999; background: #f8951d">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()" style="font-size: 40px !important;">&larr;</a>
+        <a class="dropdown-item" href="products.html">Branding</a>
+        <a class="dropdown-item" href="products.html">Social Media Management</a>
+        <a class="dropdown-item" href="products.html">Logo Designing</a>
+        <a class="dropdown-item" href="products.html">Graphic Designing</a>
+        <a class="dropdown-item" href="products.html">Website Devlopment</a>
+        <a class="dropdown-item" href="products.html">Search Engine Optimization</a>
+        <a class="dropdown-item" href="products.html">Designs for Print</a>
+        <a class="dropdown-item" href="products.html">Advertisement & Analytics</a>
+        <a class="dropdown-item" href="products.html">Creative Consultancy</a>
+        <a class="dropdown-item" href="products.html">Product Designing</a>
+        <a class="dropdown-item" href="products.html">Content Creation</a>
+        <a class="dropdown-item" href="products.html">Online Brand Presence</a>
+        <a class="dropdown-item" href="products.html">Product Photography</a>
+        <a class="dropdown-item" href="products.html">Photo & Video Ad Production</a>
+        <a class="dropdown-item" href="products.html">Integrated Marketing Solution</a>
+    </div>
+    <div class="whatsapp">
+        <a href="https://wa.me/917992434053" target="_blank">
+            <img src="img/whatsapp.png" height="50px">
+        </a>
+    </div>
+
+    <section style="height: 150px; width: 100%; background: rgba(255,255,0,1); ">
+        
+    </section>
+
+    <section class="wellcome_area clearfix" id="home" style="background: rgba(255,255,0,1); height: auto !important;">
+        <div class="row landing-view" style="background: rgba(255,255,0,1);">
+            <div class="container2">
+                <div style="text-align: center; padding-top: 50px;">
+                    <img src="img/hb-logo.png" width="200px">             
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="height: auto; background: rgba(255,255,0,1);">
+        <div style="height: 200px;">
+            <svg width="100%" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID" d=""/></svg>
+        </div>
+    </section>
+    <!-- ***** Wellcome Area End ***** -->
+    <!-- ***** Special Area Start ***** -->
+    <section class="special-area bg-white section_padding_100" id="about" style="padding-top: 0px !important;">
+        <!-- Special Description Area -->
+        <div class="special_description_area" id="social">
+            <div>
+                <div class="row">
+                    <!-- <div class="col-lg-6">
+                        <div class="special_description_img" style="margin: 0px;">
+                            <img src="img/logo.gif" alt="" style="display: block; margin: auto; border-radius: 50%" >
+                        </div>
+                    </div> -->
+                    <div class="col-lg-12 col-xl-8 ml-xl-auto social-description" style="margin: auto !important;">
+                        <div class="special_description_content" style="text-align: center !important;">
+                            <h2>Need a new Logo for your brand?</h2>
+                            <p>
+                            <strong style="font-weight: bold; font-size: 25px;">
+                            We are here to help.
+                            </strong>
+                            <br>
+                            <br>
+                            Logo becomes a brand’s symbolic identity. It is a minimalistic way to represent the products and services offered by the company. Hence, it needs to be distinctive and have a high recall value.
+                            <br>
+                            <br>
+                            Having trouble in finding one? Wait! Let us assist you!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Special Area End ***** -->
+
+
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div style="background-color:#000000;">
+                <img data-u="image" style="opacity:0.5;" src="img/px-action-athlete-athletes-848618-image.jpg" />
+                <!-- <div data-ts="flat" data-p="320" style="left:144px;top:80px;width:550px;height:90px;position:absolute;overflow:hidden;">
+                    <div data-to="50% 50%" data-ts="preserve-3d" data-t="0" style="left:550px;top:0px;width:550px;height:90px;position:absolute;overflow:hidden;">
+                        <div data-to="50% 50%" data-ts="preserve-3d" data-arr="1" style="left:20px;top:18px;width:200px;height:20px;position:absolute;color:#edf1f2;font-size:16px;font-weight:700;line-height:1.2;letter-spacing:0.1em;">Fast and furious</div>
+                        <div data-to="50% 50%" data-ts="preserve-3d" data-arr="2" style="left:19px;top:36px;width:600px;height:30px;position:absolute;color:#edf1f2;font-size:24px;line-height:1.2;letter-spacing:0.05em;"><span style="font-weight:900;color:#e04338;">DON'T JUST</span> CHASE YOUR DREAMS...</div>
+                    </div>
+                </div> -->
+            </div>
+            <div>
+                <img data-u="image" src="img/px-beach-daylight-fun-1430675-image.jpg" />
+                <!-- <div data-ts="flat" data-p="2720" data-po="50% 48%" style="left:0px;top:0px;width:980px;height:380px;position:absolute;">
+                    <div data-to="50% 50%" data-ts="preserve-3d" data-t="3" style="left:400px;top:-30px;width:500px;height:400px;position:absolute;">
+                        <div data-to="50% 50%" data-ts="preserve-3d" data-t="4" style="left:0px;top:0px;width:500px;height:400px;position:absolute;">
+                            <div data-to="50% 50%" data-ts="preserve-3d" data-t="5" style="left:0px;top:0px;width:500px;height:400px;position:absolute;">
+                                <div data-to="50% 50%" data-ts="preserve-3d" data-t="6" style="left:0px;top:0px;width:500px;height:400px;position:absolute;">
+                                    <div data-to="50% 50%" data-t="7" style="left:-50px;top:175px;width:600px;height:38px;position:absolute;opacity:0;color:#00a186;font-size:32px;font-weight:700;line-height:1.2;text-align:center;">Create your kind of holiday</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div>
+                <img data-u="image" src="img/px-fun-man-person-2361598-image.jpg" />
+                <!-- <div data-ts="flat" data-p="2720" data-po="50% 48%" style="left:0px;top:0px;width:980px;height:380px;position:absolute;">
+                    <div data-to="50% 50%" data-ts="preserve-3d" data-arr="8" style="left:-2px;top:20px;width:1000px;height:20px;position:absolute;opacity:0;color:#0ff2f2;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.2;letter-spacing:1.3em;text-align:center;">CHAMPIONS ARE MADE WHEN NO ONE IS WATCHING
+                    </div>
+                </div> -->
+            </div>
+            <div style="background-color:#000000;">
+                <img data-u="image" style="opacity:0.5;" src="img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg" />
+                <!-- <div data-ts="flat" data-p="1800" data-po="50% -100%" style="left:120px;top:90px;width:600px;height:300px;position:absolute;">
+                    <svg viewbox="0 0 200 200" width="200" height="200" data-t="10" style="left:66px;top:21px;display:block;position:absolute;opacity:0.6;overflow:visible;">
+                        <path stroke-dasharray="0,700" fill="none" stroke="#ffffff" d="M0,100C0,44.77152 44.77152,0 100,0C155.22848,0 200,44.77152 200,100C200,155.22848 155.22848,200 100,200C44.77152,200 0,155.22848 0,100Z" data-t="9"></path>
+                    </svg>
+                    <svg viewbox="0 0 80 80" width="80" height="80" data-t="12" style="left:3px;top:124px;display:block;position:absolute;opacity:0.6;overflow:visible;">
+                        <path stroke-dasharray="0,400" fill="none" stroke="#ffffff" shape-rendering="crispEdges" d="M80,80L0,80L0,0L80,0Z" data-t="11"></path>
+                    </svg>
+                    <svg viewbox="0 0 500 200" data-to="50% 50%" width="500" height="200" data-t="13" style="left:50px;top:50px;display:block;position:absolute;opacity:0;overflow:visible;">
+                        <g>
+                            <text fill="#ffffff" x="17" y="110" style="position:absolute;font-family:Montserrat,sans-serif;font-size:32px;font-weight:300;overflow:visible;">MODERN
+                            </text>
+                            <text fill="#ffffff" x="188" y="110" style="position:absolute;font-family:Montserrat,sans-serif;font-size:32px;font-weight:500;letter-spacing:0.1em;overflow:visible;">PROMOTION
+                            </text>
+                            <text fill="#ff3700" x="218" y="130" style="position:absolute;font-family:Montserrat,sans-serif;font-size:16px;font-weight:900;letter-spacing:0.1em;overflow:visible;">EYE FOCUS
+                            </text>
+                            <text fill="#ff3700" x="333" y="130" style="position:absolute;opacity:0.8;font-family:Montserrat,sans-serif;font-size:16px;font-weight:700;letter-spacing:0.1em;overflow:visible;">MOTION TITLES
+                            </text>
+                        </g>
+                    </svg>
+                </div> -->
+            </div>
+            <div>
+                <img data-u="image" src="img/px-bloom-blossom-flora-65219-image.jpg" />
+                <!-- <div data-ts="flat" data-p="500" style="left:160px;top:-30px;width:800px;height:200px;position:absolute;">
+                    <div data-arr="14" style="left:0px;top:36px;width:800px;height:70px;position:absolute;opacity:0;color:#199494;font-family:'Roboto Condensed',sans-serif;font-size:32px;font-weight:400;line-height:1.2;letter-spacing:-0.05em;text-align:center;text-shadow:2px 1px #d9d99a;">ADDING&nbsp;&nbsp;<span style="font-size:2em;">PERFECTION</span>&nbsp; TO&nbsp; YOUR&nbsp;&nbsp;<span style="font-size:1.6em;">LAWN</span></div>
+                    <div data-arr="15" style="left:0px;top:106px;width:800px;height:48px;position:absolute;opacity:0;color:#0d4d4d;font-family:'Roboto Condensed',sans-serif;font-size:20px;font-weight:400;line-height:1.2;letter-spacing:0.2em;text-align:center;text-shadow:1px 1px #d9d99a;">CREATING GREEN <span style="font-size:2em;">SPACES</span> FOR LIVING</div>
+                </div> -->
+            </div>
+        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">slider html</a>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:13px;height:13px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+
+    <section style="background-color: #ffffff; padding: 100px 0;">
+        <div class="container">
+            <div class="row">
+                    <!-- <div class="col-lg-6">
+                        <div class="special_description_img" style="margin: 0px;">
+                            <img src="img/logo.gif" alt="" style="display: block; margin: auto; border-radius: 50%" >
+                        </div>
+                    </div> -->
+                    <div class="col-lg-6 col-xl-8 ml-xl-auto social-description" style="margin: auto !important;">
+                        <div class="special_description_content" style="text-align: center !important;">
+                            <h2>Let's make it a Happy Diwali!</h2>
+                            <p>
+                            <strong style="font-weight: bold; font-size: 25px;">
+                            We are here to help.
+                            </strong>
+                            <br>
+                            <br>
+                            Logo becomes a brand’s symbolic identity. It is a minimalistic way to represent the products and services offered by the company. Hence, it needs to be distinctive and have a high recall value.
+                            <br>
+                            <br>
+                            Having trouble in finding one? Wait! Let us assist you!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                    <!-- Form Start-->
+                    <div class="contact_from">
+                        <form action="#" class="billing-form enquiry" id="enquiry-form">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area" id="order">
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="Name" id="name" placeholder="Your Name" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="Number" id="number" placeholder="Your Number" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="Email" id="address" placeholder="Delivery Address" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control boxes" name="Boxes" id="boxes" placeholder="No. of Boxes" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control price" name="Price" id="price" placeholder="Price" value="₹0">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="Details" class="form-control" id="message" cols="30" rows="4" placeholder="Special Requests" required></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn submit-btn">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
+                        </form>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #fffcd5; border-top: 5px dashed #e6e7e8;">
+        <p style="text-align: center; font-size: 48px; margin-bottom: 0em; color: #636466; padding-top: 50px;"><strong>Procedure</strong></p>
+        <div class="line-shape"></div>
+    </section>
+    <section class="ftco-section our-section section-mobile" style="padding: 100px 0; background: #fffcd5">
+      <div class="row div-parent">
+        <div class="col-lg-segment div-child ftco-animate">
+            <div>
+                <img src="img/brief.png" width="50%">
+            </div>
+            </br>DESIGN BRIEF</br>
+            <p>
+                Taking briefs from clients to understand the expectations and brand requirements with the logo.
+            </p>
+        </div>
+        <div class="col-lg-arrow div-child mobile ftco-animate">
+          <p class="mobile-arrow">&darr;</p>
+        </div>
+        <div class="col-lg-segment div-child ftco-animate">
+          <div>
+            <img src="img/research.png" width="50%">
+          </div>
+          </br>RESEARCH</br>
+          <p>
+              A deep-rooted research with the brand industry and brand colors associated with the business.
+          </p>
+        </div>
+        <div class="col-lg-arrow div-child mobile ftco-animate">
+          <p class="mobile-arrow">&darr;</p>
+        </div>
+        <div class="col-lg-segment div-child ftco-animate">
+          <div>
+            <img src="img/conceptualize.png" width="50%">
+          </div>
+          </br>CONCEPTUALIZE</br>
+          <p>
+              Strategizing and designing the logo representing the brand and its products or services.
+          </p>
+        </div>
+        <div class="col-lg-arrow div-child mobile ftco-animate">
+          <p class="mobile-arrow">&darr;</p>
+        </div>
+        <div class="col-lg-segment div-child ftco-animate">
+          <div>
+            <img src="img/drafts.png" width="50%">
+          </div>
+          </br>DRAFTS</br>
+          <p>
+              Converting preliminary design or manual sketches into a final set of logo designs with the help of technology. 
+          </p>
+        </div>
+        <div class="col-lg-arrow div-child mobile ftco-animate">
+          <p class="mobile-arrow">&darr;</p>
+        </div>
+        <div class="col-lg-segment div-child ftco-animate">
+          <div>
+            <img src="img/approval.png" width="50%">
+          </div>
+          </br>CLIENT APPROVAL</br>
+          <p>
+              The final draft goes for client’s nod. The acknowledged draft is all good to go as the brand's logo.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="ftco-section our-section section-desktop" style="border-bottom: 5px dashed #e6e7e8; background: #fffcd5">
+      <div class="row div-parent">
+        <div class="col-lg-segment div-child ftco-animate">
+            <div>
+              <img src="img/brief.png" width="75%">
+            </div>
+            </br>DESIGN BRIEF</br>
+            <p>
+                Taking briefs from clients to understand the expectations and brand requirements with the logo.
+            </p>
+        </div>
+        <div class="col-lg-arrow div-child desktop ftco-animate">
+          &rarr;
+        </div>
+        <div class="col-lg-segment div-child ftco-animate">
+          <div>
+            <img src="img/research.png" width="75%">
+          </div>
+          </br>RESEARCH</br>
+          <p>
+              A deep-rooted research with the brand industry and brand colors associated with the business.
+          </p>
+        </div>
+        <div class="col-lg-arrow div-child desktop ftco-animate">
+          &rarr;
+        </div>
+        <div class="col-lg-segment div-child ftco-animate">
+          <div>
+            <img src="img/conceptualize.png" width="75%">
+          </div>
+          </br>CONCEPTUALIZE</br>
+          <p>
+              Strategizing and designing the logo representing the brand and its products or services.
+          </p>
+        </div>
+        <div class="col-lg-arrow div-child desktop ftco-animate">
+          &rarr;
+        </div>
+        <div class="col-lg-segment div-child ftco-animate">
+          <div>
+            <img src="img/drafts.png" width="75%">
+          </div>
+          </br>DRAFTS</br>
+          <p>
+              Converting preliminary design or manual sketches into a final set of logo designs with the help of technology. 
+          </p>
+        </div>
+        <div class="col-lg-arrow div-child desktop ftco-animate">
+          &rarr;
+        </div>
+        <div class="col-lg-segment div-child ftco-animate">
+          <div>
+            <img src="img/approval.png" width="75%">
+          </div>
+          </br>CLIENT APPROVAL</br>
+          <p>
+              The final draft goes for client’s nod. The acknowledged draft is all good to go as the brand's logo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-color: #ffffff">
+        <p style="text-align: center; font-size: 48px; margin-bottom: 0em; color: #636466; padding-top: 50px;"><strong>Flagship Events</strong></p>
+        <div class="line-shape"></div>
+    </section>
+
+    <section style="background-color: #ffffff; padding-top: 25px;">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-8 col-xl-8 ml-xl-auto social-description" style="margin: auto !important;">
+                        <div class="special_description_content" style="text-align: center !important;">
+                            <h2>Sehyog</h2>
+                            <p>
+                            <strong style="font-weight: bold; font-size: 25px;">
+                            We are here to help.
+                            </strong>
+                            <br>
+                            <br>
+                            Logo becomes a brand’s symbolic identity. It is a minimalistic way to represent the products and services offered by the company. Hence, it needs to be distinctive and have a high recall value.
+                            <br>
+                            <br>
+                            Having trouble in finding one? Wait! Let us assist you!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="col-lg-cards ftco-animate Price-Show" style="">
+                            <img src="img/creative1.jpg" class="img-fluid hb-work-photo" alt="" >
+                            <ul>
+                              <li>
+                                <img src="img/creative1.jpg" alt="">
+                              </li>
+                              <li>
+                                <img src="img/creative2.jpg" alt="">
+                              </li>
+                              <li>
+                                <img src="img/creative6.jpg" alt="">
+                              </li>
+                              <li>
+                                <img src="img/creative4.jpg" alt="">
+                              </li>
+                              <li>
+                                <img src="img/creative5.jpg" alt="">
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #ffffff; padding-top: 50px;">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-4">
+                        <div class="col-lg-cards ftco-animate Price-Show" style="">
+                            <img src="img/creative1.jpg" class="img-fluid hb-work-photo" alt="" >
+                            <ul>
+                              <li>
+                                <img src="img/creative1.jpg" alt="">
+                              </li>
+                              <li>
+                                <img src="img/creative2.jpg" alt="">
+                              </li>
+                              <li>
+                                <img src="img/creative6.jpg" alt="">
+                              </li>
+                              <li>
+                                <img src="img/creative4.jpg" alt="">
+                              </li>
+                              <li>
+                                <img src="img/creative5.jpg" alt="">
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xl-8 ml-xl-auto social-description" style="margin: auto !important;">
+                        <div class="special_description_content" style="text-align: center !important;">
+                            <h2>Utsav</h2>
+                            <p>
+                            <strong style="font-weight: bold; font-size: 25px;">
+                            We are here to help.
+                            </strong>
+                            <br>
+                            <br>
+                            Logo becomes a brand’s symbolic identity. It is a minimalistic way to represent the products and services offered by the company. Hence, it needs to be distinctive and have a high recall value.
+                            <br>
+                            <br>
+                            Having trouble in finding one? Wait! Let us assist you!
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #ffffff; padding-top: 50px; padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-8 col-xl-8 ml-xl-auto social-description" style="margin: auto !important;">
+                        <div class="special_description_content" style="text-align: center !important;">
+                            <h2>Each One Feed One</h2>
+                            <p>
+                            <strong style="font-weight: bold; font-size: 25px;">
+                            We are here to help.
+                            </strong>
+                            <br>
+                            <br>
+                            Logo becomes a brand’s symbolic identity. It is a minimalistic way to represent the products and services offered by the company. Hence, it needs to be distinctive and have a high recall value.
+                            <br>
+                            <br>
+                            Having trouble in finding one? Wait! Let us assist you!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="col-lg-cards ftco-animate Price-Show" style="">
+                            <img src="img/creative1.jpg" class="img-fluid hb-work-photo" alt="" >
+                            <ul>
+                              <li>
+                                <img src="img/creative1.jpg" alt="">
+                              </li>
+                              <li>
+                                <img src="img/creative2.jpg" alt="">
+                              </li>
+                              <li>
+                                <img src="img/creative6.jpg" alt="">
+                              </li>
+                              <li>
+                                <img src="img/creative4.jpg" alt="">
+                              </li>
+                              <li>
+                                <img src="img/creative5.jpg" alt="">
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ***** CTA Area Start ***** -->
+    <section class="our-monthly-membership section_padding_50 clearfix service-call-to-action" style="background: #ffffff !important;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="membership-description">
+                        <h2>Want to know more about us?</h2>
+                        <p>Let's get in touch and discuss ideas to bring a positive change in our society</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="get-start-area">
+                            <!-- Form Start -->
+                            <form action="#" method="post" class="form-inline enquiry">
+                                <input type="number" class="form-control number" name="Number" placeholder="+91  XXXXXXXXXX">
+                                <input type="submit" class="submit" value="Request a Callback">
+                            </form>
+                            <!-- Form End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** CTA Area End ***** -->
+
+
+    <!-- ***** Client Feedback Area Start ***** -->
+    <section class="clients-feedback-area bg-white section_padding_100 clearfix" id="testimonials">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="slider slider-for">
+                        <!-- Client Feedback Text  -->
+                        <div class="client-feedback-text text-center" style="outline: 0 !important;">
+                            <div class="client">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-description text-center">
+                                <p>“ Loons is a one in a million combination of creative designers and web
+                                    developers who just...gets it. It's hard to pinpoint exactly why it's fantastic
+                                    to work with them, but it starts with their consistent reliability both in
+                                    meeting a deadline and exceeding expectations. I was always
+                                    delighted to know that Loons was on my project. ”</p>
+                            </div>
+                            <div class="star-icon text-center">
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                            </div>
+                            <div class="client-name text-center">
+                                <h5>Dr. Ashutosh Trivedi</h5>
+                                <p>Oro Dental Speciality Clinic</p>
+                            </div>
+                        </div>
+                        <!-- Client Feedback Text  -->
+                        <div class="client-feedback-text text-center" style="outline: 0 !important;">
+                            <div class="client">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-description text-center">
+                                <p>“ Our website was developed by Loons. I had an amazing experience working with them, the coordination was excellent. They presented an excellent quality of work. I trust Loons for my digital business growth and will surely recommend it to someone looking for technological solutions along with creativity....Keep up the good work guys! ”</p>
+                            </div>
+                            <div class="star-icon text-center">
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                            </div>
+                            <div class="client-name text-center">
+                                <h5>Pushpraj Sinha</h5>
+                                <p>Kavitashree Homes</p>
+                            </div>
+                        </div>
+                        <!-- Client Feedback Text  -->
+                        <div class="client-feedback-text text-center" style="outline: 0 !important;">
+                            <div class="client">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-description text-center">
+                                <p>“ Liked the service and their work ethics. Good communication and cooperation throughout the work period. Will surely look forward to working with them in the future. They are really good with technical and creative stuff, never missed a deadline and always suggested solutions even beyond the projects alloted. All in all, a complete package.”</p>
+                            </div>
+                            <div class="star-icon text-center">
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                            </div>
+                            <div class="client-name text-center">
+                                <h5>Adv. Achint Kumar</h5>
+                                <p>Legal Vibes - Advocates and Solicitors</p>
+                            </div>
+                        </div>
+                        <!-- Client Feedback Text  -->
+                        <div class="client-feedback-text text-center" style="outline: 0 !important;">
+                            <div class="client">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-description text-center">
+                                <p>“ I have been using it for a number of years. I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job and save me the coding time and just the general hassle of hosting. ”</p>
+                            </div>
+                            <div class="star-icon text-center">
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                            </div>
+                            <div class="client-name text-center">
+                                <h5>Henry smith</h5>
+                                <p>Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Client Thumbnail Area -->
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="slider slider-nav">
+                        <div class="client-thumbnail" style="outline: 0 !important;">
+                            <img src="img/bg-img/client-3.jpg" alt="">
+                        </div>
+                        <div class="client-thumbnail" style="outline: 0 !important;">
+                            <img src="img/bg-img/client-2.jpg" alt="">
+                        </div>
+                        <div class="client-thumbnail" style="outline: 0 !important;">
+                            <img src="img/bg-img/client-1.jpg" alt="">
+                        </div>
+                        <div class="client-thumbnail" style="outline: 0 !important;">
+                            <img src="img/bg-img/client-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Client Feedback Area End ***** -->
+
+    
+    <section style="background: #ffffff; height: 50px;" id="contact">
+        
+    </section>
+
+    <!-- ***** Contact Us Area Start ***** -->
+    <section class="footer-contact-area section_padding_100 clearfix" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Heading Text  -->
+                    <div class="section-heading">
+                        <h2>Get in touch with us!</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                    <div class="footer-text">
+                        <p>We are here to help!</p>
+                    </div>
+                    <div class="address-text">
+                        <p><span>Address:</span> Loons, Kachi Talab, Gardanibagh, Patna - 800001</p>
+                    </div>
+                    <div class="phone-text">
+                        <p><span>Phone:</span> <a href="tel:+917992434053"> +91 7992434053 </a> </p>
+                    </div>
+                    <div class="email-text">
+                        <p><span>Email:</span> <a href="mailto:info@loons.co.in"> info@loons.co.in </a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Form Start-->
+                    <div class="contact_from">
+                        <form action="#" class="billing-form enquiry" id="enquiry-form">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="Name" id="name" placeholder="Your Name" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="Number" id="number" placeholder="Your Number" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="Email" id="email" placeholder="Your E-mail" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="Details" class="form-control" id="message" cols="30" rows="4" placeholder="Your Message" required></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn submit-btn">Send Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-social-icon text-center section_padding_70 clearfix">
+        <!-- footer logo -->
+        <a class="navbar-brand" href="#" style="padding-bottom: 10px; margin: 0 !important">
+            <img src="img/loons-logo-without-background.png" height="60" >
+        </a>
+        <!-- social icon-->
+        <div class="footer-social-icon">
+            <a href="https://www.facebook.com/loonsindia"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="active fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/loonsindia/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/loonsindia/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer-menu">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Foooter Text-->
+        <div class="copyright-text">
+            <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
+            <p>Copyright ©2020 Loons</a></p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js" integrity="sha512-0RYHqoOARmpxNEw+esxNHXaPoXWU36swC8a5BgmnexZNmOhDewCvKRNWitJiwf40o8JUsg831Uu/cRIN7sCdKA==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/wavify.js"></script>
+    <script type="text/javascript" src="js/jquery.wavify.js"></script>
+    <script type="text/javascript">
+        var myWave = $('#myID').wavify({
+          height: 50,
+          bones: 3,
+          amplitude: 40,
+          color: 'rgba(255, 255, 255, 1)',
+          speed: .25
+        });
+    </script>
+    <script src="js/navBar.js"></script>
+    <!-- ***** Footer Area Start ***** -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Jquery-2.2.4 JS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="js/plugins.js"></script>
+    <!-- Slick Slider Js-->
+    <script src="js/slick.min.js"></script>
+    <!-- Footer Reveal JS -->
+    <script src="js/footer-reveal.min.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+    <script src="js/formData.js"></script>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#order").on("keyup", ".boxes", function(){
+                var price = +100;
+                var quantity = +$(this).val();
+                $(".price").val( "₹" + price * quantity);
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        $('.col-lg-cards ul li').hover(function(){
+    
+            $(this).parent().parent().children('.img-fluid').attr("src", $(this).find('img').attr("src"));
+        })
+    </script>
+
+</body>
+
+</html>

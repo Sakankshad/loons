@@ -1239,7 +1239,7 @@ p {
     border-radius: 25px 25px 25px 0;
 }
 
-#email {
+#email, #address, #boxes, #price {
     font-size: 18px;
     padding: 15px 15px;
     border-radius: 25px 25px 25px 0;
@@ -2150,4 +2150,38 @@ header:hover .rotating-dashed .dashing i {
 .section-desktop .col-lg-segment:hover img {
     padding: 0;
     transition: 0.5s;
+}
+
+.col-lg-cards ul {
+  padding: 0;
+  align-items: center;
+}
+
+.col-lg-cards ul li img {
+  width: 100%;
+  opacity: 75%;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.col-lg-cards ul li {
+  list-style: none;
+  border: 1px solid rgba(0,0,0,0.1);
+  margin: 2px;
+  cursor: pointer;
+  float: left;
+  width: calc(20% - 4px);
+}
+
+.col-lg-cards .img-fluid {
+  padding-bottom: 1rem;
+} 
+
+.hb-work-photo {
+    padding: 20px !important;
+}
+
+.col-lg-cards:hover .hb-work-photo {
+    padding: 0px !important;
+    transition: 0.4s;
 }
