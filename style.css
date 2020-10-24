@@ -1788,22 +1788,20 @@ header:hover .rotating-dashed .dashing i {
 
 .container2 {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
     .container2 {
-      max-width: 90%; } }
+      max-width: 100%; } }
   @media (min-width: 768px) {
     .container2 {
-      max-width: 75%; } }
+      max-width: 100%; } }
   @media (min-width: 992px) {
     .container2 {
-      max-width: 60%; } }
+      max-width: 90%; } }
   @media (min-width: 1200px) {
     .container2 {
-      max-width: 40%; } }
+      max-width: 85%; } }
 
 .sidenav {
   height: 100%;
@@ -1865,7 +1863,7 @@ header:hover .rotating-dashed .dashing i {
 }
 
 #mySidenav1 ul {
-    margin-top: 50% !important;
+    margin-top: 35% !important;
 }
 
 .sidenav a:hover {
@@ -2222,15 +2220,45 @@ header:hover .rotating-dashed .dashing i {
 
 @media (min-width: 992px) {
 .Leftbg .social-description {
-    padding-right: 0px;
+    padding-right: 25px;
     padding-left: 50px;
 }
 .Rightbg .social-description {
     padding-right: 50px;
-    padding-left: 0px;
+    padding-left: 25px;
 }
 }
 
+.col-lg-cards > img {
+    border: 5px dashed #636466;
+    border-radius: 5%;
+}
+
+@media (min-width: 992px) {
+#jssor_1 {
+    border: 5px dashed #636466;
+    border-radius: 5vh;
+}
+
+}
 /**, :after, :before {
     box-sizing: border-box;
 }*/
+
+.social-landing {
+padding-bottom: 0px !important;
+}
+
+#social {
+   padding-bottom: 0px !important; 
+}
+
+@media (min-width: 992px) {
+.social-landing {
+    padding-bottom: 30px !important;
+}
+#social {
+   padding-bottom: 30px !important; 
+}
+}
+
