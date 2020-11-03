@@ -2292,3 +2292,17 @@ padding-bottom: 0px !important;
         background-size: auto 250px;
     }
 }
+
+#typed1, .typed-heading h2, .typed-heading .typed-cursor {
+    font-size: 48px !important;
+}
+
+@media (max-width: 500px) {
+    #typed1, .typed-heading h2, .typed-heading .typed-cursor {
+    font-size: 36px !important;
+}
+}
+
+.get-start-area input {
+    margin: 5px;
+}
