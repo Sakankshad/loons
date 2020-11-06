@@ -2306,3 +2306,11 @@ padding-bottom: 0px !important;
 .get-start-area input {
     margin: 5px;
 }
+
+.product-photo-process {
+    font-size: 19px;
+}
+
+.product-photo-process p {
+    font-size: 16px;
+}
