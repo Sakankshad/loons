@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Humara Bihar - An initiative by Loons</title>
+    <style type="text/css">
+        @font-face {
+          font-family: Hobo;
+          src: url(fonts/hobostd.otf);
+        }
+        .typer {
+            top: 0px;
+            position: fixed;
+            text-align: center;
+            font-size: 4rem;
+            color: #f8951d;
+            width: 100%;
+            height: 100vh;
+            background: #ffffff;
+            z-index: 21474836470;
+
+        }
+
+        @media (max-width: 768px) {
+
+        .typer {
+            font-size: 2rem !important;
+        }
+
+        }
+
+        .preload-highlight {
+            color: #00abb6;
+            font-family: Hobo;
+        }
+    </style>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/demos.js"></script>
+    <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:500,d:1000,x:0,e:{x:6}}],
+              [{b:-1,d:1,x:100,p:{x:{d:1,dO:9}}},{b:0,d:2000,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,x:200,p:{x:{d:1,dO:9}}},{b:0,d:2000,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,rX:20,rY:90},{b:0,d:4000,rX:0,e:{rX:1}}],
+              [{b:-1,d:1,rY:-20},{b:0,d:4000,rY:-90,e:{rY:7}}],
+              [{b:-1,d:1,sX:2,sY:2},{b:1000,d:3000,sX:1,sY:1,e:{sX:1,sY:1}}],
+              [{b:-1,d:1,sX:2,sY:2},{b:1000,d:5000,sX:1,sY:1,e:{sX:3,sY:3}}],
+              [{b:-1,d:1,tZ:300},{b:0,d:2000,o:1},{b:3500,d:3500,tZ:0,e:{tZ:1}}],
+              [{b:-1,d:1,x:20,p:{x:{o:33,r:0.5}}},{b:0,d:1000,x:0,o:0.5,e:{x:3,o:1},p:{x:{dl:0.05,o:33},o:{dl:0.02,o:68,rd:2}}},{b:1000,d:1000,o:1,e:{o:1},p:{o:{dl:0.05,o:68,rd:2}}}],
+              [{b:-1,d:1,da:[0,700]},{b:0,d:600,da:[700,700],e:{da:1}}],
+              [{b:600,d:1000,o:0.4}],
+              [{b:-1,d:1,da:[0,400]},{b:200,d:600,da:[400,400],e:{da:1}}],
+              [{b:800,d:1000,o:0.4}],
+              [{b:-1,d:1,sX:1.1,sY:1.1},{b:0,d:1600,o:1},{b:1600,d:5000,sX:0.9,sY:0.9,e:{sX:1,sY:1}}],
+              [{b:0,d:1000,o:1,p:{o:{o:4}}}],
+              [{b:1000,d:1000,o:1,p:{o:{o:4}}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 16,
+                $SpacingY: 16
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1200;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="img/loons-logo-icon.png">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <style>
+        /*jssor slider loading skin double-tail-spin css*/
+        .jssorl-004-double-tail-spin img {
+            animation-name: jssorl-004-double-tail-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-004-double-tail-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 031 css*/
+        .jssorb031 {position:absolute;}
+        .jssorb031 .i {position:absolute;cursor:pointer;}
+        .jssorb031 .i .b {fill:#000;fill-opacity:0.6;stroke:#fff;stroke-width:1600;stroke-miterlimit:10;stroke-opacity:0.8;}
+        .jssorb031 .i:hover .b {fill:#fff;fill-opacity:1;stroke:#000;stroke-opacity:1;}
+        .jssorb031 .iav .b {fill:#fff;stroke:#000;stroke-width:1600;fill-opacity:.6;}
+        .jssorb031 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="typer" >
+            <div style="padding-top: 42vh;">
+                <div id="basic" style="display: inline-block;">We</div>
+                <div class="type-wrap" style="display: inline-block;">
+                    <div id="typed-strings">
+                      <p>sound <span class="preload-highlight">Crazy</span>^1000</p>
+                      <p>look <span class="preload-highlight">Crazy</span>^1000</p>
+                      <p>work <span class="preload-highlight">Crazy</span>^1000</p>
+                      <p>are <span class="preload-highlight">Lo</span><span style="font-family: Hobo;">O</span><span class="preload-highlight">ns</span></p>
+                    </div>
+                    <span id="typed" style="white-space:pre;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area animated" style="padding: 0 !important;">
+        <div class="highlight-dashed" style="padding: 2.5px 4%;">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <!-- Menu Area Start -->
+                    <div class="col-12 col-lg-10" style="padding: 0 !important;">
+                        <div class="menu_area">
+                            <nav class="navbar navbar-expand-lg navbar-light">
+                                <!-- Logo -->
+                                <a class="navbar-brand" href="#">
+                                    <img src="img/loons-logo-without-background.png" height="60" >
+                                </a>
+                                <button class="navbar-toggler"><span class="navbar-toggler-icon" onclick="openNav1()"></span></button>
+                                <!-- Menu Area -->
+                                <div class="collapse navbar-collapse" id="ca-navbar" >
+                                    <ul class="navbar-nav ml-auto" id="nav">
+                                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">Know us</a></li>
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align: center !important;">Services</a>
+                                          <div class="dropdown-menu" aria-labelledby="dropdown04">
+                                            <a class="dropdown-item" href="social-media-marketing.html">Social Media Management</a>
+                                            <a class="dropdown-item" href="logo-designing.html">Logo Designing</a>
+                                            <a class="dropdown-item" href="graphics-designing.html">Graphic Designing</a>
+                                            <a class="dropdown-item" href="website-devlopment.html">Website Devlopment</a>
+                                            <a class="dropdown-item" href="search-engine-optimization.html">Search Engine Optimization</a>
+                                            <a class="dropdown-item" href="advertisement-and-analytics.html">Advertisement & Analytics</a>
+                                            <a class="dropdown-item" href="content-writing.html">Content Writing</a>
+                                            <a class="dropdown-item" href="product-photography.html">Product Photography</a>
+                                            <a class="dropdown-item" href="#">Digital Marketing</a>
+                                          </div>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="humarabihar.html">Social</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+                                    </ul>
+                                    <div class="sing-up-button d-lg-none">
+                                        <a href="#contact">Enquire Now</a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Signup btn -->
+                    <div class="col-12 col-lg-2">
+                        <div class="sing-up-button d-none d-lg-block">
+                            <a href="#contact">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rotating-dashed">
+            <span class="dashing"><i></i></span>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <div id="mySidenav1" class="sidenav" style="z-index: 9999999999999999;">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+            <ul class="navbar-nav ml-auto" id="nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Know us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#home" onclick="openNav2()">Services &rarr;</a></li>
+                <li class="nav-item"><a class="nav-link" href="humarabihar.html">Social</a></li>
+                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+            </ul>
+            <div class="mobile-enquiry-button" onclick="closeNav1()">
+                <a href="#contact" style="text-align: center;">Enquire Now</a>
+            </div>
+
+
+    </div>
+    <div id="mySidenav2" class="sidenav" style="z-index: 99999999999999999; background: #f8951d">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()" style="font-size: 40px !important;">&larr;</a>
+        <a class="dropdown-item" href="social-media-marketing.html">Social Media Management</a>
+        <a class="dropdown-item" href="logo-designing.html">Logo Designing</a>
+        <a class="dropdown-item" href="graphics-designing.html">Graphic Designing</a>
+        <a class="dropdown-item" href="website-devlopment.html">Website Devlopment</a>
+        <a class="dropdown-item" href="search-engine-optimization.html">Search Engine Optimization</a>
+        <a class="dropdown-item" href="advertisement-and-analytics.html">Advertisement & Analytics</a>
+        <a class="dropdown-item" href="content-writing.html">Content Writing</a>
+        <a class="dropdown-item" href="product-photography.html">Product Photography</a>
+        <a class="dropdown-item" href="#">Digital Marketing</a>
+    </div>
+    <div class="whatsapp">
+        <a href="https://wa.me/917992434053" target="_blank">
+            <img src="img/whatsapp.png" height="50px">
+        </a>
+    </div>
+
+    <section style="height: 150px; width: 100%; background: rgba(255,255,0,1); ">
+        
+    </section>
+
+    <section class="wellcome_area clearfix" id="home" style="background: rgba(255,255,0,1); height: auto !important;">
+        <div class="row landing-view" style="background: rgba(255,255,0,1);">
+            <div class="container2">
+                <div style="text-align: center; padding-top: 50px;">
+                    <img src="img/hb-logo.png" width="200px">             
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="height: auto; background: rgba(255,255,0,1);">
+        <div style="height: 200px;">
+            <svg width="100%" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID" d=""/></svg>
+        </div>
+    </section>
+    <!-- ***** Wellcome Area End ***** -->
+    <!-- ***** Special Area Start ***** -->
+    <section class="social-landing special-area bg-white section_padding_100" id="about" style="padding-top: 0px !important;">
+        <!-- Special Description Area -->
+        <div class="special_description_area" id="social">
+            <div class="container2">
+                <div class="row">
+                    <!-- <div class="col-lg-6">
+                        <div class="special_description_img" style="margin: 0px;">
+                            <img src="img/logo.gif" alt="" style="display: block; margin: auto; border-radius: 50%" >
+                        </div>
+                    </div> -->
+                    <div class="col-lg-6 col-xl-8 ml-xl-auto social-description" style="margin: auto !important; padding-bottom: 20px;">
+                        <div class="special_description_content" style="text-align: center !important;">
+                            <h2>Who are we?</h2>
+                            <p>
+                            <strong style="font-weight: bold;">Humara Bihar</strong> is a social initiative by Loons along with a group of students hailing from Bihar and currently studying in reputed institutions of India. It also connects with other socially active members who want to contribute for the better representation of our state Bihar on different social platforms and work for the welfare of their homeland.
+                            <br>
+                            <br>
+                            Originated in 2019, Humara Bihar actively works for the underprivileged and economically backward section of society and helps them to fulfill their basic needs like food, clothes and education. We have successfully executed <strong style="font-weight: bold;"> 5 social events</strong> on ground that <strong style="font-weight: bold;">benefited more than 10,000 families </strong> directly or indirectly. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" style="padding: 0 !important;">
+                        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1280px;height:960px;overflow:hidden;visibility:hidden;">
+                            <!-- Loading Screen -->
+                            <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:1280px;height:960px;text-align:center;background-color:rgba(0,0,0,0.7);">
+                                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
+                            </div>
+                            <div data-u="slides" class="img-div" style="cursor:default;position:relative;top:0px;left:0px;width:1280px;height:960px;overflow:hidden;">
+                                <div style="background-color:#000000;">
+                                    <img data-u="image" src="img/IMG-20200523-WA0003.jpg" />
+                                </div>
+                                <div>
+                                    <img data-u="image" src="img/cover2.png" />
+                                </div>
+                                <div>
+                                    <img data-u="image" src="img/image11.jpg" />
+                                </div>
+                                <div >
+                                    <img data-u="image" src="img/IMG-20191026-WA0040.jpg" />
+                                </div>
+                                <div>
+                                    <img data-u="image" src="img/IMG_3535.jpg" />
+                                </div>
+                            </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">slider html</a>
+                            <!-- Bullet Navigator -->
+                            <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                                <div data-u="prototype" class="i" style="width:13px;height:13px;">
+                                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- Arrow Navigator -->
+                            <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                                </svg>
+                            </div>
+                            <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Special Area End ***** -->
+
+    <section style="background-color: #fbff84; padding: 50px 0;">
+        <div class="container1">
+            <div class="row">
+                    <div class="col-lg-6">
+                        <div class="col-lg-cards ftco-animate Price-Show" style="">
+                                <img src="img/utsav2.jpg" class="img-fluid hb-work-photo" style="padding: 20px !important" alt="" >
+                                <ul style="padding-top: 5px;">
+                                  <li>
+                                    <img src="img/utsav2.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/utsav23.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/utsav23.jpeg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/utsav24.jpeg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/utsav25.jpeg" alt="">
+                                  </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-8 ml-xl-auto social-description" style="margin: auto !important;">
+                        <div class="special_description_content" style="text-align: center !important;">
+                            <h2>Utsav 2.0</h2>
+                            <p>
+                            <strong style="font-weight: bold; font-size: 25px;">
+                            Khushiyan Baatne se Badthi hai!
+                            </strong>
+                            <br>
+                            <br>
+                            Activities were organised for the underpriviledged kids like diya painting sessions, music session, etc in different orphanages of Patna. All this was done being in line with the government guidelines.
+                            <br>
+                            <br>
+                            We did our bit to bring joy on the faces of theses kids,
+                            <br>
+                            <br>
+                            <span style="font-size: 25px; color: #f8951d">
+                            You can do your bit too!
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #ffffff; padding: 100px 0;">
+        <div class="container1">
+            <div class="row">
+                    <!-- <div class="col-lg-6">
+                        <div class="special_description_img" style="margin: 0px;">
+                            <img src="img/logo.gif" alt="" style="display: block; margin: auto; border-radius: 50%" >
+                        </div>
+                    </div> -->
+                    <div class="col-lg-6 col-xl-8 ml-xl-auto social-description" style="margin: auto !important;">
+                        <div class="special_description_content" style="text-align: center !important;">
+                            <h2>Let's make it a Happy Diwali!</h2>
+                            <p>
+                            <strong style="font-weight: bold; font-size: 25px;">
+                            Buy Diyas Handpainted by the Underpriviledged Kids
+                            </strong>
+                            <br>
+                            <br>
+                            All the funds generated from this campaign will be used
+                            to provide a better future for these underprivileged kids. 
+                            <br>
+                            <br>
+                            Cost of each box is ₹251.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                    <!-- Form Start-->
+                    <div class="contact_from">
+                        <form action="#" class="billing-form enquiry" id="enquiry-form">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area" id="order">
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="Name" id="name" placeholder="Your Name" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="Number" id="number" placeholder="Your Number" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="Address" id="address" placeholder="Delivery Address" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control boxes" name="Boxes" id="boxes" placeholder="No. of Boxes" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control price" name="Price" id="price" placeholder="Price" value="₹0">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="Details" class="form-control" id="message" cols="30" rows="4" placeholder="Special Requests" required></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn submit-btn">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
+                        </form>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="background-color: #fbff84;">
+        <p style="text-align: center; font-size: 48px; margin-bottom: 0em; color: #636466; padding-top: 50px;"><strong>Flagship Events</strong></p>
+        <div class="line-shape"></div>
+    </section>
+
+    <section style="background-color: #fbff84; padding-top: 25px; position: relative;">
+        <div class="background Leftbg" style="width: 100%; background: url('img/bg.jpg'); ">
+            <div class="container">
+                <div class="row">
+                        <div class="col-lg-8 col-xl-8 ml-xl-auto social-description" style="margin: auto !important;">
+                            <div class="special_description_content" style="text-align: center !important;">
+                                <h2>Utsav</h2>
+                                <p>
+                                Utsav is the diwali celebration of Humara Bihar conducted for orphan kids. This celebration is dedicated to underprivileged children who don't have a family to share their happiness. 
+                                <br>
+                                <br>
+                                In Utsav, we come together and organise several fun sessions of art and craft, music and dance for children that gets concluded with a feast. 
+                                <br>
+                                <br>
+                                Hundreds of orphan children were helped with clothes, food and education on a long term basis through this initiative. Many people extended their support and came forward to celebrate, educate and feed the needy ones.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="col-lg-cards ftco-animate Price-Show" style="">
+                                <img src="img/IMG_20191024_153733_1.jpg" class="img-fluid hb-work-photo" alt="" >
+                                <ul>
+                                  <li>
+                                    <img src="img/IMG_20191024_153733_1.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/IMG-20191026-WA0043.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/IMG-20191027-WA0075.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/IMG-20191027-WA0121.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/IMG-20191026-WA0027.jpg" alt="">
+                                  </li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="height: 50px; background: #fbff84"></section>
+    <section style="background-color: #a6e1f1; padding-top: 50px;">
+        <div class="background Rightbg" style="width: 100%; background: url('img/bg4.jpg'); ">
+            <div class="container">
+                <div class="row">
+                        <div class="col-lg-4">
+                            <div class="col-lg-cards ftco-animate Price-Show" style="">
+                                <img src="img/IMG_3534.jpg" class="img-fluid hb-work-photo" alt="" >
+                                <ul>
+                                  <li>
+                                    <img src="img/IMG_3534.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/IMG_3547.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/IMG_9966.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/sehyog4.png" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/sehyog5.png" alt="">
+                                  </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-xl-8 ml-xl-auto social-description" style="margin: auto !important;">
+                            <div class="special_description_content" style="text-align: center !important;">
+                                <h2 style="color: #636466">Sehyog</h2>
+                                <p>
+                                Sehyog is one of the biggest donation drives of Bihar. It works for economically backward families of the society and helps them with basic amenities like food, clothes and education to poor kids.
+                                <br>
+                                <br>
+                                In Sehyog, the donation of unused books, clothes, toys and others are collected door to door from those who wish to donate and then distributed in major slum areas.
+                                <br>
+                                <br>
+                                More than 5000 people have actively participated in the donation drive. We have successfully completed two editions of sehyog that has benefited 10,000 families.
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="height: 50px; background: #a6e1f1"></section>
+    <section style="background-color: #ffdcc0; padding-top: 50px; padding-bottom: 100px;">
+        <div class="background Leftbg" style="width: 100%; background: url('img/bg3.jpg'); ">
+            <div class="container">
+                <div class="row">
+                        <div class="col-lg-8 col-xl-8 ml-xl-auto social-description" style="margin: auto !important;">
+                            <div class="special_description_content" style="text-align: center !important;">
+                                <h2>Each One Feed One</h2>
+                                <p>
+                                Each one feed one is an initiative of Humara Bihar with a vision to eradicate hunger. It's a simple idea, If every financially sound person takes the responsibility to feeds one economically weak person, no one will ever sleep hungry. 
+                                <br>
+                                <br>
+                                We distribute food packet to people who are in dire need of it. This supports empathy and works on each others upliftment.
+                                <br>
+                                <br>
+                                At the time of COVID-19 pandemic, most of the people were dying out of hunger and poverty. With Each One Feed One Campaign, we reached out to beggars, migrants and daily wage workers with food and hygiene kits and helped about 1000 families.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="col-lg-cards ftco-animate Price-Show" style="">
+                                <img src="img/IMG-20200523-WA0002.jpg" class="img-fluid hb-work-photo" alt="" >
+                                <ul>
+                                  <li>
+                                    <img src="img/IMG-20200523-WA0002.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/IMG-20200526-WA0003.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/image1.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/IMG-20200526-WA0018.jpg" alt="">
+                                  </li>
+                                  <li>
+                                    <img src="img/IMG-20200531-WA0022.jpg" alt="">
+                                  </li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ***** CTA Area Start ***** -->
+    <section class="our-monthly-membership section_padding_50 clearfix service-call-to-action" style="background: #ffffff !important;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="membership-description">
+                        <h2>Want to know more about us?</h2>
+                        <p>Let's get in touch and discuss ideas to bring a positive change in our society</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="get-start-area">
+                            <!-- Form Start -->
+                            <form action="#" method="post" class="form-inline enquiry">
+                                <input type="number" class="form-control number" name="Number" placeholder="+91  XXXXXXXXXX">
+                                <input type="submit" class="submit" value="Request a Callback">
+                            </form>
+                            <!-- Form End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** CTA Area End ***** -->
+
+
+    <!-- ***** Client Feedback Area Start ***** -->
+    <section class="clients-feedback-area bg-white section_padding_100 clearfix" id="testimonials">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="slider slider-for">
+                        <!-- Client Feedback Text  -->
+                        <div class="client-feedback-text text-center" style="outline: 0 !important;">
+                            <div class="client">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-description text-center">
+                                <p>“ I had an amazing experience to help the needy people. I have been a consistent part of Sehyog and could feel the difference they are creating. Hats off to team Humara Bihar. Keep up the good work. ”</p>
+                            </div>
+                            <div class="star-icon text-center">
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                            </div>
+                            <div class="client-name text-center">
+                                <h5>Dr. Shubham Thakur</h5>
+                                <p>Contributor</p>
+                            </div>
+                        </div>
+                        <!-- Client Feedback Text  -->
+                        <div class="client-feedback-text text-center" style="outline: 0 !important;">
+                            <div class="client">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-description text-center">
+                                <p>“ Blessed to have this opportunity of getting together with like-minded people and working for a good cause. Humara Bihar has been a great initiative for supporting the needy. You people are doing great and I am and I will surely be a part of it in future. ”</p>
+                            </div>
+                            <div class="star-icon text-center">
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                            </div>
+                            <div class="client-name text-center">
+                                <h5>Sanjog Chawla</h5>
+                                <p>Sponsor</p>
+                            </div>
+                        </div>
+                        <!-- Client Feedback Text  -->
+                        <div class="client-feedback-text text-center" style="outline: 0 !important;">
+                            <div class="client">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-description text-center">
+                                <p>“ Working With Humara Bihar has been a wonderful experience for us. We collaborated with Utsav for diwali celebration supporting orphan kids. Utsav was a huge success and it even inspired us to carry out similar events. Glad to be a part of this noble cause. ”</p>
+                            </div>
+                            <div class="star-icon text-center">
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                            </div>
+                            <div class="client-name text-center">
+                                <h5>Mayank Agarwal </h5>
+                                <p>Associate</p>
+                            </div>
+                        </div>
+                        <!-- Client Feedback Text  -->
+                        <div class="client-feedback-text text-center" style="outline: 0 !important;">
+                            <div class="client">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="client-description text-center">
+                                <p>“ Humara Bihar is a great platform for youth like us to come forward and help the people who seek our help. I have been a part of their event by contributing whatever little I could  and I believe it is the most satisfying thing one can do. Happy to connect with this platform ”</p>
+                            </div>
+                            <div class="star-icon text-center">
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                                <i class="ion-ios-star"></i>
+                            </div>
+                            <div class="client-name text-center">
+                                <h5>Shaman Raj</h5>
+                                <p>Contributor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Client Thumbnail Area -->
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="slider slider-nav">
+                        <div class="client-thumbnail" style="outline: 0 !important;">
+                            <img src="img/IMG-20201022-WA0002.jpg" alt="">
+                        </div>
+                        <div class="client-thumbnail" style="outline: 0 !important;">
+                            <img src="img/sardar.jpg" alt="">
+                        </div>
+                        <div class="client-thumbnail" style="outline: 0 !important;">
+                            <img src="img/hb-client2.jpg" alt="">
+                        </div>
+                        <div class="client-thumbnail" style="outline: 0 !important;">
+                            <img src="img/hb-client.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Client Feedback Area End ***** -->
+
+    
+    <section style="background: #ffffff; height: 50px;" id="contact">
+        
+    </section>
+
+    <!-- ***** Contact Us Area Start ***** -->
+    <section class="footer-contact-area section_padding_100 clearfix" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Heading Text  -->
+                    <div class="section-heading">
+                        <h2>Get in touch with us!</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                    <div class="footer-text">
+                        <p>We are here to help!</p>
+                    </div>
+                    <div class="address-text">
+                        <p><span>Address:</span> Loons, Kachi Talab, Gardanibagh, Patna - 800001</p>
+                    </div>
+                    <div class="phone-text">
+                        <p><span>Phone:</span> <a href="tel:+917992434053"> +91 7992434053 </a> </p>
+                    </div>
+                    <div class="email-text">
+                        <p><span>Email:</span> <a href="mailto:info@loons.co.in"> info@loons.co.in </a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Form Start-->
+                    <div class="contact_from">
+                        <form action="#" class="billing-form enquiry" id="enquiry-form">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="Name" id="name" placeholder="Your Name" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="Number" id="number" placeholder="Your Number" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="Email" id="email" placeholder="Your E-mail" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="Details" class="form-control" id="message" cols="30" rows="4" placeholder="Your Message" required></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn submit-btn">Send Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-social-icon text-center section_padding_70 clearfix">
+        <!-- footer logo -->
+        <a class="navbar-brand" href="#" style="padding-bottom: 10px; margin: 0 !important">
+            <img src="img/loons-logo-without-background.png" height="60" >
+        </a>
+        <!-- social icon-->
+        <div class="footer-social-icon">
+            <a href="https://www.facebook.com/loonsindia"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="active fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/loonsindia/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/loonsindia/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer-menu">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Foooter Text-->
+        <div class="copyright-text">
+            <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
+            <p>Copyright ©2020 Loons</a></p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js" integrity="sha512-0RYHqoOARmpxNEw+esxNHXaPoXWU36swC8a5BgmnexZNmOhDewCvKRNWitJiwf40o8JUsg831Uu/cRIN7sCdKA==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/wavify.js"></script>
+    <script type="text/javascript" src="js/jquery.wavify.js"></script>
+    <script type="text/javascript">
+        var myWave = $('#myID').wavify({
+          height: 50,
+          bones: 3,
+          amplitude: 40,
+          color: 'rgba(255, 255, 255, 1)',
+          speed: .25
+        });
+    </script>
+    <script src="js/navBar.js"></script>
+    <!-- ***** Footer Area Start ***** -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Jquery-2.2.4 JS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="js/plugins.js"></script>
+    <!-- Slick Slider Js-->
+    <script src="js/slick.min.js"></script>
+    <!-- Footer Reveal JS -->
+    <script src="js/footer-reveal.min.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+    <script src="js/formData.js"></script>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#order").on("keyup", ".boxes", function(){
+                var price = +100;
+                var quantity = +$(this).val();
+                $(".price").val( "₹" + price * quantity);
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        $('.col-lg-cards ul li').hover(function(){
+    
+            $(this).parent().parent().children('.img-fluid').attr("src", $(this).find('img').attr("src"));
+        })
+    </script>
+
+</body>
+
+</html>

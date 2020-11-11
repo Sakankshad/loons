@@ -804,7 +804,7 @@ p {
     right: 0;
     width: 100%;
     height: 100px;
-    background-color: #ffe630;
+    background-color: #ffff00;
     content: ''
 }
 
@@ -1998,6 +1998,7 @@ header:hover .rotating-dashed .dashing i {
   background-color: #ffffff;
 }
 
+
 .div-parent {
   position: relative;
   height: auto;
@@ -2062,6 +2063,11 @@ header:hover .rotating-dashed .dashing i {
   padding: 0px 25px !important;
 }
 
+.section-mobile div {
+    width: 0;
+    height: 0;
+}
+
 .section-desktop {
   visibility: visible !important;
   opacity: 100% !important;
@@ -2069,6 +2075,10 @@ header:hover .rotating-dashed .dashing i {
   padding : 45px 25px !important;
   width: auto !important;
   padding-bottom: 100px !important;
+}
+
+.journey {
+    padding-bottom: 150px;
 }
 
 }
@@ -2265,7 +2275,7 @@ padding-bottom: 0px !important;
 }
 
 .header_area {
-    background: url(img/paper1.jpg);
+    background: url(img/paper1.jpg) !important;
 }
 
 .footer-social-icon {
@@ -2313,4 +2323,15 @@ padding-bottom: 0px !important;
 
 .product-photo-process p {
     font-size: 16px;
+}
+
+.section-mobile h4 {
+    font-size: 20px;
+}
+
+@media (max-width: 992px) {
+    .section-desktop div {
+    width: 0;
+    height: 0;
+}
 }
