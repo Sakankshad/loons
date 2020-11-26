@@ -49,22 +49,6 @@
           src: url(fonts/hobostd.otf);
         }
 
-#img1 {
-  background-image: url('img/Jelly_Sweets.jpg');
-}
-
-#img2 {
-  background-image: url('img/Fruit_Jelly_2.jpg');
-}
-
-@media (max-width: 600px) {
-      #img1 {
-          background-image: url('img/Jelly_Sweets_2.jpg');
-      }
-      #img2 {
-          background-image: url('img/Fruit_Jelly_4.jpg');
-      }
-}
 
 body {
     font-family: 'Cabin', sans-serif;
