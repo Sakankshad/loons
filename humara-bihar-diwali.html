@@ -973,6 +973,17 @@
     <script type="text/javascript">jssor_1_slider_init();
     </script>
     <script type="text/javascript">
+        $(document).ready(function() {
+
+            console.log("Hello world!");
+            
+            $('#preloader').fadeOut('slow', function () {
+                $(this).remove();
+
+            });
+        });
+    </script>
+    <script type="text/javascript">
         $(document).ready(function(){
             $("#order").on("keyup", ".boxes", function(){
                 var price = +251;

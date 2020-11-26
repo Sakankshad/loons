@@ -139,12 +139,8 @@
     });
 
     // :: 9.0 Preloader Active code
-    $window.on('load', function () {
-        $('#preloader').fadeOut('slow', function () {
-            $(this).remove();
-        });
-    });
 
+    
 })(jQuery);
 
 // $('nav .dropdown').hover(function(){

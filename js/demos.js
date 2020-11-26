@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     onComplete: function(self) {
       prettyLog('onComplete ' + self);
+         $('#preloader').fadeOut('slow', function () {
+             $(this).remove();
+          });
     },
     preStringTyped: function(pos, self) {
       prettyLog('preStringTyped ' + pos + ' ' + self);
@@ -173,3 +176,4 @@ function toggleLoop(typed) {
     typed.loop = true;
   }
 }
+

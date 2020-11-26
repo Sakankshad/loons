@@ -11,6 +11,43 @@
     <!-- Title -->
     <title>Loons</title>
     <style type="text/css">
+        .pre-preloader {
+            -webkit-animation: 2000ms linear 0s normal none infinite running pre-preloader;
+            animation: 2000ms linear 0s normal none infinite running pre-preloader;
+            background: transparent none repeat scroll 0 0;
+            border-color: #dddddd #dddddd #00abb6;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 3px;
+            height: 40px;
+            left: calc(50% - 20px);
+            position: relative;
+            top: calc(50% - 20px);
+            width: 40px;
+            z-index: 9;
+        }
+
+        @-webkit-keyframes pre-preloader {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes pre-preloader {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
         @font-face {
           font-family: Hobo;
           src: url(fonts/hobostd.otf);
@@ -40,50 +77,7 @@
             color: #00abb6;
             font-family: Hobo;
         }
-
-
-        .ball { 
-            /*width: 100px; 
-            height: 100px; */
-            margin: auto;
-            /*border-radius: 50%; */
-            /*background-color: #FF5722; */
-            animation: bouncer 0.5s; 
-            /*animation-timing-function: ease;*/
-            animation-direction: alternate; 
-            animation-timing-function: cubic-bezier(.5, 0.05, 1, .5); 
-            animation-iteration-count: infinite; 
-        } 
-          
-        @keyframes bouncer { 
-            from { 
-                transform: translate3d(0, 0, 0); 
-            } 
-            to { 
-                transform: translate3d(0, 200px, 0); 
-            } 
-        } 
-        /* Prefix Support */ 
-          
-        .ball { 
-            -webkit-animation-name: bouncer; 
-            -webkit-animation-duration: 0.5s; 
-            -webkit-animation-direction: alternate; 
-            -webkit-animation-timing-function: cubic-bezier( 
-            .5, 0.05, 1, .5); 
-            -webkit-animation-iteration-count: infinite; 
-        } 
-          
-        @-webkit-keyframes bouncer { 
-            from { 
-                -webkit-transform: translate3d(0, 0, 0); 
-                transform: translate3d(0, 0, 0); 
-            } 
-            to { 
-                -webkit-transform: translate3d(0, 200px, 0); 
-                transform: translate3d(0, 200px, 0); 
-            } 
-        } 
+ 
     </style>
     <script src="js/typed.js" type="text/javascript"></script>
     <script src="js/demos.js"></script>
@@ -99,6 +93,21 @@
 </head>
 
 <body>
+
+    <!-- PRE-Preloader Start -->
+    <div id="pre-preloader" style="z-index: 9999999999999999999">
+        <div class="pre-preloader"></div>
+    </div>
+
+    <script type="text/javascript">
+
+        setTimeout(function() {
+            var pre = document.getElementById("pre-preloader");
+            pre.remove();
+        }, 3000);
+              
+    </script>
+
     <!-- Preloader Start -->
     <div id="preloader">
         <div class="typer" >
@@ -594,7 +603,24 @@
     <script src="js/footer-reveal.min.js"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
+
     <script src="js/formData.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('#pre-preloader').fadeOut('slow', function () {
+                $(this).remove();
+
+            });
+            
+            $('#preloader').fadeOut('slow', function () {
+                $(this).remove();
+
+            });
+        });
+    </script>
+    
     <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> -->
 
 </body>

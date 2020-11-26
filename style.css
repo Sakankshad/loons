@@ -276,7 +276,7 @@ p {
     vertical-align: middle;
 }
 
-#preloader {
+#preloader, #pre-preloader {
     overflow: hidden;
     background-color: #fff;
     height: 100%;
