@@ -2267,7 +2267,7 @@ padding-bottom: 0px !important;
 }
 
 .billboard-img {
-    background: url(img/billboard.gif);
+    background: url(img/billboard.webp);
     height: 500px;
     background-size: auto 500px;
     background-position: center;

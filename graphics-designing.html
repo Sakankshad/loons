@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- code for fixing webp on apple devices -->
+      <script>(function(){var WebP=new Image();
+      WebP.onload=WebP.onerror=function(){
+        if(WebP.height!=2){var sc=document.createElement('script');sc.type='text/javascript';sc.async=true;
+        var s=document.getElementsByTagName('script')[0];sc.src='js/webpjs-0.0.2.min.js';s.parentNode.insertBefore(sc,s);}};
+        WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';})();
+      </script>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -286,7 +293,7 @@
         </div>
     </section>
     <!-- ***** Special Area End ***** -->
-    <section class="app-screenshots-area bg-white section_padding_100 clearfix" id="screenshot" style="background-image: url('img/BG1.jpg') !important; background-position: bottom center; background-size: cover; border-top: 5px dashed rgb(99, 100, 102)">
+    <section class="app-screenshots-area bg-white section_padding_100 clearfix" id="screenshot" style="background-image: url('img/BG1.png') !important; background-position: bottom center; background-size: cover; border-top: 5px dashed rgb(99, 100, 102)">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -304,22 +311,22 @@
                     <!-- App Screenshots Slides  -->
                     <div class="app_screenshots_slides owl-carousel">
                         <div class="single-shot">
-                            <img src="img/creative1.jpg" alt="">
+                            <img src="img/creative1.webp" alt="">
                         </div>
                         <div class="single-shot">
-                            <img src="img/creative7.jpg" alt="">
+                            <img src="img/creative7.webp" alt="">
                         </div>
                         <div class="single-shot">
-                            <img src="img/creative3.png" alt="">
+                            <img src="img/creative3.webp" alt="">
                         </div>
                         <div class="single-shot">
-                            <img src="img/creative4.jpg" alt="">
+                            <img src="img/creative4.webp" alt="">
                         </div>
                         <div class="single-shot">
-                            <img src="img/creative8.jpg" alt="">
+                            <img src="img/creative8.webp" alt="">
                         </div>
                         <div class="single-shot">
-                            <img src="img/creative6.jpg" alt="">
+                            <img src="img/creative6.webp" alt="">
                         </div>
                     </div>
                 </div>
