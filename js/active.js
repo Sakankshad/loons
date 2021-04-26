@@ -65,7 +65,6 @@
             focusOnSelect: true,
             slide: 'div',
             autoplay: true,
-            centerMode: true,
             centerPadding: '30px',
             mobileFirst: true,
             prevArrow: '<i class="fa fa-angle-left"></i>',
@@ -120,23 +119,9 @@
     }
 
     $('a[href="#"]').click(function ($) {
-        $.preventDefault()
+        $.preventDefault();
     });
 
-    var $window = $(window);
-
-    if ($window.width() > 767) {
-        new WOW().init();
-    }
-
-    // :: 8.0 Sticky Active Code
-    $window.on('scroll', function () {
-        if ($window.scrollTop() > 48) {
-            $('.header_area').addClass('sticky slideInDown');
-        } else {
-            $('.header_area').removeClass('sticky slideInDown');
-        }
-    });
 
     // :: 9.0 Preloader Active code
 

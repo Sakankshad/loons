@@ -141,6 +141,29 @@
         </div>
     </div>
 
+    <div class="popup-container">
+
+      <div class="pullUp">
+        <div class="pullUp-Button">
+            <span style="color: #f8951d; cursor: pointer; font-family: Hobo; font-size: 4em; position: absolute; transform: translate(102.75px, -73px);">O</span>
+            <h2> Graphic Design Workshop </h2> 
+        </div>
+        <!-- <hr> -->
+        <div class="pullUp-div row">
+            <div class="col-lg-4" style="margin: auto;">
+                <img src="image/workshop/graphic-design.gif" width="100%">
+            </div>
+            <div class="col-lg-8 popup-headline" style="margin: auto; text-align: center;">
+                We Can Help you Adjust Better
+            </div>
+            <!-- <p>Burrow under covers stare at the wall, play with food and get confused by dust so spit up on light gray carpet instead of adjacent linoleum see owner.</p> -->
+        </div>
+      </div>
+
+      <!-- <div class="pocket"></div> -->
+
+    </div>
+
     <!-- ***** Header Area Start ***** -->
     <header class="header_area animated" style="padding: 0 !important;">
         <div class="highlight-dashed" style="padding: 2.5px 4%;">
@@ -330,7 +353,7 @@
                             </p>
                             <div class="col-lg-2" style="margin-top: 30px;">
                                 <div class="sing-up-button d-lg-block">
-                                    <a href="#">Know More</a>
+                                    <a href="website-development.html">Know More</a>
                                 </div>
                             </div>
                         </div>
@@ -363,7 +386,7 @@
                             </p>
                             <div class="col-lg-2" style="margin-top: 30px; padding-bottom: 25px;">
                                 <div class="sing-up-button d-lg-block">
-                                    <a href="#">Know More</a>
+                                    <a href="social-media-marketing.html">Know More</a>
                                 </div>
                             </div>
                         </div>
@@ -754,16 +777,16 @@
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="slider slider-nav">
                         <div class="client-thumbnail" style="outline: 0 !important;">
-                            <img src="img/bg-img/client-3.jpg" alt="Oro dental - client of Loons">
+                            <img src="img/bg-img/client-3.jpg" alt="">
                         </div>
                         <div class="client-thumbnail" style="outline: 0 !important;">
-                            <img src="img/bg-img/client-2.jpg" alt="Kavitashree Homes - Client of Loons">
+                            <img src="img/bg-img/client-2.jpg" alt="">
                         </div>
                         <div class="client-thumbnail" style="outline: 0 !important;">
-                            <img src="img/bg-img/client-1.jpg" alt="Legal Vibes - Client of Loons">
+                            <img src="img/bg-img/client-1.jpg" alt="">
                         </div>
                         <div class="client-thumbnail" style="outline: 0 !important;">
-                            <img src="img/hb-client.jpg" alt="Contributor in Humara Bihar, Loons">
+                            <img src="img/hb-client.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -784,7 +807,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="get-started-button wow bounceInDown" data-wow-delay="0.5s">
-                        <a href="#">Get Started</a>
+                        <a href="#contact">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -961,11 +984,11 @@
     <!-- Popper js -->
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap-4 Beta JS -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
     <!-- All Plugins JS -->
     <script src="js/plugins.js"></script>
     <!-- Slick Slider Js-->
-    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="js/slick.min.js"></script>
     <!-- Footer Reveal JS -->
     <script src="js/footer-reveal.min.js"></script>
     <!-- Active JS -->
@@ -985,6 +1008,21 @@
                 $(this).remove();
 
             });
+        });
+
+        var $window = $(window);
+
+        if ($window.width() > 767) {
+            new WOW().init();
+        }
+
+        // :: 8.0 Sticky Active Code
+        $window.on('scroll', function () {
+            if ($window.scrollTop() > 48) {
+                $('.header_area').addClass('sticky slideInDown');
+            } else {
+                $('.header_area').removeClass('sticky slideInDown');
+            }
         });
     </script>
 
