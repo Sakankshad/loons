@@ -2336,7 +2336,7 @@ padding-bottom: 0px !important;
   margin: 0 auto;
   bottom: 0px;
     position: fixed;
-    z-index: 99999;
+    z-index: 999999
 }
 /* pullUp Styling */
 
@@ -2355,6 +2355,7 @@ padding-bottom: 0px !important;
   border-top-right-radius: 10px;
   transform: translateY(calc(90vh - 47px));
   transition: all 0.5s ease-in-out;
+  z-index: 9999;
 }
 
 .pullUp:hover {
@@ -2425,4 +2426,12 @@ padding-bottom: 0px !important;
 #Incentives .single-special:hover {
 -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.25);
 box-shadow: 0 10px 90px rgba(0, 0, 0, 0.25);
+}
+
+#counter p {
+    font-size: 15px;
+}
+
+#counter .col-lg-6 {
+    padding: 0 5px;
 }
