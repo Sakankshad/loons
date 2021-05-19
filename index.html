@@ -27,43 +27,16 @@
     <!-- Title -->
     <title>Loons | Evolving with Ideas | Best Creative and Technology Solutions in Patna</title>
     <style type="text/css">
-        .pre-preloader {
-            -webkit-animation: 2000ms linear 0s normal none infinite running pre-preloader;
-            animation: 2000ms linear 0s normal none infinite running pre-preloader;
-            background: transparent none repeat scroll 0 0;
-            border-color: #dddddd #dddddd #00abb6;
-            border-radius: 50%;
-            border-style: solid;
-            border-width: 3px;
-            height: 40px;
-            left: calc(50% - 20px);
-            position: relative;
-            top: calc(50% - 20px);
-            width: 40px;
-            z-index: 9;
+        
+        #pre-preloader {
+            display: flex;
+            justify-content: center;
         }
 
-        @-webkit-keyframes pre-preloader {
-            0% {
-                -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-            100% {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
+        #pre-preloader video {
+            max-width: 300px;
         }
 
-        @keyframes pre-preloader {
-            0% {
-                -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-            100% {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
         @font-face {
           font-family: Hobo;
           src: url(fonts/hobostd.otf);
@@ -93,6 +66,71 @@
             color: #00abb6;
             font-family: Hobo;
         }
+
+/* pullUp Styling */
+
+.pullUp {
+  width: 100%;
+  height: 90vh;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0px;
+  transform: translateY(calc(90vh - 47px));
+  transition: all 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.pullUp:active,  .pullUp:hover {
+  transform: translateY(10vh);
+}
+
+.pullUp h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 !important
+}
+
+.pullUp-Button {
+    background-color: #079beb;
+    padding: 15px 20px 8px 20px;
+    max-width: 320px;
+    border-radius: 50% / 100% 100% 0 0;
+    margin: auto;
+}
+
+.pullUp-div {
+    background-color: #079beb;
+    height: calc(90vh - 47px);
+    padding: 0 15px;
+}
+
+.popup-headline {
+    font-size: 3rem;
+    color: #fff;
+}
+
+
+@media (max-width: 776px) {
+    .popup-headline {
+    font-size: 20px;
+    margin-top: -100px !important;
+}
+
+.pullUp-div .col-lg-4 {
+    margin: 0 auto !important;
+}
+
+}
+
+@media (max-width: 370px) {
+.popup-headline {
+    font-size: 16px;
+    margin-top: -100px !important;
+}
+
+}
+        
     </style>
     <script src="js/typed.js" type="text/javascript"></script>
     <script src="js/demos.js"></script>
@@ -111,7 +149,10 @@
 <body>
     <!-- PRE-Preloader Start -->
     <div id="pre-preloader" style="z-index: 9999999999999999999">
-        <div class="pre-preloader"></div>
+        <!-- <div class="pre-preloader"></div> -->
+        <video width="50%" height="auto" autoplay muted loop>
+            <source src="video/Animation.mp4" type="video/mp4">
+        </video>
     </div>
 
     <script type="text/javascript">
@@ -141,33 +182,30 @@
         </div>
     </div>
 
-    <div class="popup-container">
 
-      <div class="pullUp">
+    <!-- <div class="pullUp">
         <div class="pullUp-Button">
             <span style="color: #f8951d; cursor: pointer; font-family: Hobo; font-size: 4em; position: absolute; transform: translate(117.25px, -73px);">O</span>
             <h2> Graphic Design Workshop </h2> 
         </div>
-        <!-- <hr> -->
         <div class="pullUp-div row">
             <div class="col-lg-4" style="margin: auto;">
-                <img src="image/workshop/Designer-life.gif" width="100%">
+                <a href="graphic-design-workshop.html">
+                    <img src="image/workshop/Designer-life.gif" width="100%">
+                </a>
             </div>
             <div class="col-lg-8 popup-headline" style="margin: auto; text-align: center;">
-                Do you believe in reflecting your ideas through graphics? Then, we have something to offer!
+                <a href="graphic-design-workshop.html" style="color: #ffffff !important">
+                    Do you believe in reflecting your ideas through graphics? Then, we have something to offer!
+                </a>
                 <div class="get-start-area">
-                    <div class="get-started-button wow bounceInDown" data-wow-delay="0.5s" style="text-align: center !important;">
+                    <div class="get-started-button" style="text-align: center !important;">
                         <a href="graphic-design-workshop.html" style="background-color:  #f8951d; border-radius: 24px 24px 24px 0px; color: #ffffff; font-size: 16px;">Know More</a>
                     </div>
                 </div>
             </div>
-            <!-- <p>Burrow under covers stare at the wall, play with food and get confused by dust so spit up on light gray carpet instead of adjacent linoleum see owner.</p> -->
         </div>
-      </div>
-
-      <!-- <div class="pocket"></div> -->
-
-    </div>
+    </div> -->
 
     <!-- ***** Header Area Start ***** -->
     <header class="header_area animated" style="padding: 0 !important;">
@@ -253,11 +291,11 @@
         <a class="dropdown-item" href="product-photography.html">Product Photography</a>
         <a class="dropdown-item" href="#">Digital Marketing</a>
     </div>
-    <!-- <div class="whatsapp">
+    <div class="whatsapp">
         <a href="https://wa.me/917992434053" target="_blank">
             <img src="img/whatsapp.png" alt="whatsapp loons" height="50px">
         </a>
-    </div> -->
+    </div>
 
     <!-- ***** Wellcome Area Start ***** -->
     <section class="wellcome_area clearfix" id="home" style="margin-top: 130px;">
@@ -878,6 +916,7 @@
             </div>
         </div>
     </section>
+
     <!-- ***** Our Team Area End ***** -->
     <section style="background: #ffffff; height: 50px;" id="contact">
         
@@ -1004,15 +1043,15 @@
     <script type="text/javascript">
         $(document).ready(function() {
 
-            $('#pre-preloader').fadeOut('slow', function () {
-                $(this).remove();
+            // $('#pre-preloader').fadeOut('slow', function () {
+            //     $(this).remove();
 
-            });
+            // });
             
-            $('#preloader').fadeOut('slow', function () {
-                $(this).remove();
+            // $('#preloader').fadeOut('slow', function () {
+            //     $(this).remove();
 
-            });
+            // });
         });
 
         var $window = $(window);
@@ -1022,13 +1061,13 @@
         }
 
         // :: 8.0 Sticky Active Code
-        // $window.on('scroll', function () {
-        //     if ($window.scrollTop() > 48) {
-        //         $('.header_area').addClass('sticky slideInDown');
-        //     } else {
-        //         $('.header_area').removeClass('sticky slideInDown');
-        //     }
-        // });
+        $window.on('scroll', function () {
+            if ($window.scrollTop() > 48) {
+                $('.header_area').addClass('sticky slideInDown');
+            } else {
+                $('.header_area').removeClass('sticky slideInDown');
+            }
+        });
     </script>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> -->

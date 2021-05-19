@@ -22,7 +22,7 @@ $( document ).ready(function( $ ) {
 	
 		// fire off the request to /form.php
 		request = $.ajax({
-			url: "https://script.google.com/macros/s/AKfycbwf255MMngxZ6Vwbbu_pQj_qCVZIt_b1U3u6HUKaZFej7IRTiOK/exec",
+			url: "https://script.google.com/macros/s/AKfycbzqpjR33MDdzRqth3bGme8-3KdEM22QsFvFOvoSO_RaVinYLCrgVp5izH6QyKyItPtCzQ/exec",
 			type: "get",
 			data: serializedData
 		});
@@ -32,7 +32,7 @@ $( document ).ready(function( $ ) {
 			// log a message to the console
 			$('#result').html('<a href="https://docs.google.com/spreadsheets/d/1wB58j0ahcBC-LW4mlDx20aCMhPS6zyMPGJWzBTVEmF4/edit?usp=sharing" target="_blank">Success - see Google Sheet</a>');
 			console.log("Hooray, it worked!");
-			alert("Submitted! We will contact you soon. For urgent queries call +91 9304555001");
+			alert("Registration is Closed!");
 		});
 	
 		// callback handler that will be called on failure
