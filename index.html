@@ -149,7 +149,6 @@
 <body>
     <!-- PRE-Preloader Start -->
     <div id="pre-preloader" style="z-index: 9999999999999999999">
-        <!-- <div class="pre-preloader"></div> -->
         <video width="50%" height="auto" autoplay muted loop>
             <source src="video/Animation.mp4" type="video/mp4">
         </video>
@@ -1043,15 +1042,15 @@
     <script type="text/javascript">
         $(document).ready(function() {
 
-            // $('#pre-preloader').fadeOut('slow', function () {
-            //     $(this).remove();
+            $('#pre-preloader').fadeOut('slow', function () {
+                $(this).remove();
 
-            // });
+            });
             
-            // $('#preloader').fadeOut('slow', function () {
-            //     $(this).remove();
+            $('#preloader').fadeOut('slow', function () {
+                $(this).remove();
 
-            // });
+            });
         });
 
         var $window = $(window);
